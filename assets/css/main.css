@@ -8,7 +8,13 @@
 3441px  - ~px     = xx
 
 */
+:root{
+    --fontRegular: 600;
+}
 
+:root{
+    --primaryColor: #0E2431;
+}
 @font-face {
     font-family: "FredokaOne";
     src: url("../fonts/FredokaOne/FredokaOne-Regular.ttf");
@@ -194,7 +200,7 @@
 
 .item_nav{
     display: inline;
-    margin-left: 20px;
+    margin-left: 70px;
     text-decoration: none;
     
 }
@@ -202,6 +208,8 @@
 .list a{
     list-style: none;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: bold;
+    font-weight: var(--fontRegular);
+    color: var(--primaryColor);
     
 }
