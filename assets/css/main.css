@@ -22,7 +22,8 @@
     --lightPurple: #FF00FF;
     --normalPurple: #9F00FF;
     --darkPurple: #3F00FF;
-    --shadow: #F8F8F8
+    --shadow1: #F8F8F8;
+    --shadow2: #E9E9E9;
 }
 
 @font-face {
