@@ -190,3 +190,8 @@
 #header{
     height: auto;
 }
+
+.item_nav{
+    list-style: none;
+    display: inline;
+}
