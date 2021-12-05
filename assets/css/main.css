@@ -41,21 +41,15 @@
     justify-content: space-around;
     align-items: stretch;
 }
-.row-between {
-    justify-content: space-between;
-}
-.row-evenly {
-    justify-content: space-evenly;
-}
-.row-center {
-    justify-content: center;
-}
-.row-start {
-    justify-content: flex-start;
-}
-.row-end {
-    justify-content: flex-end;
-}
+.row-between {justify-content: space-between;}
+.row-evenly {justify-content: space-evenly;}
+.row-center {justify-content: center;}
+.row-start {justify-content: flex-start;}
+.row-end {justify-content: flex-end;}
+.flex-column {flex-direction: column;}
+.flex-row {flex-direction: row;}
+.flex-nowrap {flex-wrap: nowrap;}
+.flex-wrap {flex-wrap: wrap;}
 
 [class*="col"] {
     display: block;
