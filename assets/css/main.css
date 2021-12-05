@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "FunCity";
-    src: url("../fonts/FunCity/FunCity-Regular.ttf");
-}
-@font-face {
     font-family: "FredokaOne";
     src: url("../fonts/FredokaOne/FredokaOne-Regular.ttf");
 }
@@ -48,15 +44,10 @@
 .row-end {justify-content: flex-end;}
 .flex-column {flex-direction: column;}
 .flex-row {flex-direction: row;}
-.flex-nowrap {flex-wrap: nowrap;}
-.flex-wrap {flex-wrap: wrap;}
 
 [class*="col"] {
     display: block;
     width: 100%;
-}
-@media only screen and (min-width: 800px) {
-    
 }
 .col-1 {width: 8.3333%;}
 .col-2 {width: 16.6666%;}
@@ -70,6 +61,12 @@
 .col-10 {width: 83.3333%;}
 .col-11 {width: 91.6666%;}
 .col-12 {width: 100%;}
+
+@media only screen and (max-width: 800px) {
+    [class*="row"] {flex-wrap: wrap;}
+    .flex-nowrap {flex-wrap: nowrap;}
+    .item-expand {width: 100%;}
+}
 
 /* Não é usado diretamente em col, utilize em seus filhos como alternativa */
 [class*="radius"] {
@@ -97,7 +94,6 @@
 .margin-15 {margin: 15px;}
 .margin-20 {margin: 20px;}
 
-.fun-city {font-family: "FunCity";}
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
 .poppins {font-family: "Poppins";}
