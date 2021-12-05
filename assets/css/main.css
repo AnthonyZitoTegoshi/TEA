@@ -9,12 +9,12 @@
     src: url("../fonts/FredokaOne/FredokaOne-Regular.ttf");
 }
 @font-face {
-    font-family: "ChakraPetch";
-    src: url("../fonts/ChakraPetch/ChakraPetch-Regular.ttf");
-}
-@font-face {
     font-family: "Nunito";
     src: url("../fonts/Nunito/static/Nunito-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Black.ttf");
 }
 
 * {
@@ -104,6 +104,5 @@
 
 .fun-city {font-family: "FunCity";}
 .fredoka-one {font-family: "FredokaOne";}
-.chakra-petch {font-family: "ChakraPetch";}
 .nunito {font-family: "Nunito";}
-.poppins{font-family: "Poppins", sans-serif;}
+.poppins{font-family: "Poppins";}
