@@ -9,6 +9,15 @@
 
 */
 
+:root{
+    /* Cores */
+    --light: #FFFFFF;
+    --dark: #0E2431;
+    --lightPurple: #FF00FF;
+    --normalPurple: #9F00FF;
+    --darkPurple: #3F00FF;
+}
+
 @font-face {
     font-family: "FredokaOne";
     src: url("../fonts/FredokaOne/FredokaOne-Regular.ttf");
@@ -26,11 +35,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    --light-purple: #FF00FF;
-    --normal-purple: #9F00FF;
-    --dark-purple: #3F00FF;
-    --light: #FFFFFF;
-    --dark: #000000;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -196,5 +201,8 @@
 }
 
 .navbar-item a {
-    padding: 10px 20px;
+    padding: 20px 30px;
+    margin: 0 10px;
+    font-weight: bold;
+    color: var(--dark);
 }
