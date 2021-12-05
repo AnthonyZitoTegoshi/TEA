@@ -192,6 +192,15 @@
 }
 
 .item_nav{
-    list-style: none;
     display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+    
+}
+
+.list a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    
 }
