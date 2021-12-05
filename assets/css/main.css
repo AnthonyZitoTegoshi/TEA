@@ -14,18 +14,8 @@
 }
 
 @font-face {
-    font-family: "Marske";
-    src: url("../fonts/Marske/Marske.ttf");
-}
-
-@font-face {
     font-family: "Nunito";
     src: url("../fonts/Nunito/static/Nunito-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Trench";
-    src: url("../fonts/Trench/trench100free.otf");
 }
 
 * {
@@ -116,6 +106,4 @@
 .fun-city {font-family: "FunCity";}
 .fredoka-one {font-family: "FredokaOne";}
 .chakra-petch {font-family: "ChakraPetch";}
-.marske {font-family: "Marske";}
 .nunito {font-family: "Nunito";}
-.trench {font-family: "Trench";}
