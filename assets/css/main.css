@@ -62,6 +62,8 @@
 .col-11 {width: 91.6666%;}
 .col-12 {width: 100%;}
 
+/* Geralmente usado em col */
+
 @media only screen and (max-width: 800px) {
     [class*="row"] {flex-wrap: wrap;}
     .flex-nowrap {flex-wrap: nowrap;}
@@ -99,3 +101,6 @@
 .poppins{font-family: "Poppins";}
 
 
+#header{
+    height: auto;
+}
