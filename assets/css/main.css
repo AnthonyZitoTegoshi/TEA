@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 @font-face {
     font-family: "FunCity";
     src: url("../fonts/FunCity/FunCity-Regular.ttf");
@@ -9,12 +7,12 @@
     src: url("../fonts/FredokaOne/FredokaOne-Regular.ttf");
 }
 @font-face {
-    font-family: "ChakraPetch";
-    src: url("../fonts/ChakraPetch/ChakraPetch-Regular.ttf");
-}
-@font-face {
     font-family: "Nunito";
     src: url("../fonts/Nunito/static/Nunito-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Black.ttf");
 }
 
 * {
@@ -104,6 +102,5 @@
 
 .fun-city {font-family: "FunCity";}
 .fredoka-one {font-family: "FredokaOne";}
-.chakra-petch {font-family: "ChakraPetch";}
 .nunito {font-family: "Nunito";}
-.poppins{font-family: "Poppins";}
+.poppins {font-family: "Poppins";}
