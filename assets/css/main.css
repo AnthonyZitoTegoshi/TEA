@@ -8,12 +8,16 @@
 3441px  - ~px     = xx
 
 */
+
+
+/*-----------------------Variação de fontes-----------------------*/
 :root{
     --fontRegular: 600;
 }
-
+/*------------------------------Cores----------------------------*/
 :root{
     --primaryColor: #0E2431;
+    
 }
 @font-face {
     font-family: "FredokaOne";
@@ -203,7 +207,6 @@
 .list a{
     list-style: none;
     text-decoration: none;
-    font-weight: bold;
     font-weight: var(--fontRegular);
     color: var(--primaryColor);
     
