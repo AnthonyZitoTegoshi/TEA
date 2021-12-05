@@ -9,21 +9,13 @@
 
 */
 
-
-/*-----------------------Variação de fontes-----------------------*/
 :root{
-    --fontRegular: 600;
-}
-/*------------------------------Cores----------------------------*/    
-:root{
-    
+    /* Cores */
     --light: #FFFFFF;
     --dark: #0E2431;
     --lightPurple: #FF00FF;
     --normalPurple: #9F00FF;
     --darkPurple: #3F00FF;
-    --shadow1: #F8F8F8;
-    --shadow2: #E9E9E9;
 }
 
 @font-face {
@@ -208,13 +200,6 @@
     display: inline;   
 }
 
-.list a{
-    list-style: none;
-    text-decoration: none;
-    font-weight: var(--fontRegular);
-    color: var(--primaryColor);
-    
-}
 .navbar-item a {
     padding: 20px 30px;
     margin: 0 10px;
