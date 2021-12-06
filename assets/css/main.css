@@ -240,9 +240,15 @@ body {
 
 .light {color: var(--light);}
 .dark {color: var(--dark);}
-.lightPurple {color: var(--lightPurple);}
-.normalPurple {color: var(--normalPurple);}
-.darkPurple {color: var(--darkPurple);}
+.light-purple {color: var(--lightPurple);}
+.normal-purple {color: var(--normalPurple);}
+.dark-purple {color: var(--darkPurple);}
+
+.bg-light {background-color: var(--light);}
+.bg-dark {background-color: var(--dark);}
+.bg-light-purple {background-color: var(--lightPurple);}
+.bg-normal-purple {background-color: var(--normalPurple);}
+.bg-dark-purple {background-color: var(--darkPurple);}
 
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
@@ -342,7 +348,11 @@ body {
 }
 
 .board img{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     object-fit: cover;
 }
