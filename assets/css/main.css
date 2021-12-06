@@ -215,21 +215,21 @@
     width: 100%;
 }
 
-@keyframes navbar-hover {
+@keyframes navlink-hover {
     from {width: 0;}
-    to {width: calc(100% - 90px);}
+    to {width: calc(100% - 80px);}
 }
 
 .navbar-item a:hover::after {
     content: "";
     position: absolute;
-    width: calc(100% - 90px);
+    width: calc(100% - 80px);
     height: 5px;
     background-color: var(--normalPurple);
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     border-radius: 99999px;
-    animation-name: navbar-hover;
+    animation-name: navlink-hover;
     animation-duration: 0.3s;
 }
