@@ -277,8 +277,13 @@ body {
     display: inline-block;
 }
 
+.dropdown-menu:hover [class*="dropdown-items"] {
+    display: block;
+}
+
 [class*="dropdown-items"] {
     z-index: 1;
+    display: none;
     position: absolute;
     max-width: 100vw;
     max-height: 100vh;
@@ -286,6 +291,7 @@ body {
     height: auto;
     background-color: var(--light);
 }
+
 .dropdown-items-top-left {
     bottom: 100%;
     right: 0;
