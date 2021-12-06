@@ -54,6 +54,4 @@ function slide3(){
     setTimeout("slide1()", 1000);
 }
 
-    setTimeout("slide1()",1000);
-}
 
