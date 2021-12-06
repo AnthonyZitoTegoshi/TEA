@@ -31,6 +31,12 @@
     src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
+/* Animação de aparecer borda inferior no link da navbar */
+@keyframes navbar-link-hover {
+    from {width: 0;}
+    to {width: calc(100% - 80px);}
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -203,31 +209,15 @@ body {
 .nunito {font-family: "Nunito";}
 .poppins{font-family: "Poppins";}
 
-.navbar-item {
-    display: inline-block;   
+.navbar li {
+    display: inline-block;
 }
 
-.navbar a {
-    position: relative;
-    display: block;
-    font-weight: bold;
-    color: var(--dark);
-}
-
-.navbar-item a {
+.navbar li a {
     padding: 20px 40px;
 }
 
-.navbar a img {
-    height: 3rem;
-}
-
-@keyframes navlink-hover {
-    from {width: 0;}
-    to {width: calc(100% - 80px);}
-}
-
-.navbar-item a:hover::after {
+.navbar li a:hover::after {
     content: "";
     position: absolute;
     width: calc(100% - 80px);
@@ -237,8 +227,19 @@ body {
     bottom: 0;
     transform: translateX(-50%);
     border-radius: 99999px;
-    animation-name: navlink-hover;
+    animation-name: navbar-link-hover;
     animation-duration: 0.3s;
+}
+
+.navbar a {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.navbar a img {
+    height: 3rem;
 }
 
 .uil-bars {
