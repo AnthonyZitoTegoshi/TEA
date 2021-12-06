@@ -34,6 +34,31 @@ window.addEventListener("resize", windowResized);
 // Chama a função uma vez quando estiver carregada a página
 window.addEventListener("load", windowResized);
 
+// Função que verifica com qual dropdown o usuário interagiu
+function dropdownToggle(e) {
+    // Verifica qual foi o dropdown clicado
+    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    for (var i = 0; i < dropdowns.length; i++) {
+        var dropdown = dropdowns[i].getBoundingClientRect();
+        var items = dropdowns[i].firstElementChild;
+        var itemsCS = getComputedStyle(items);
+        var itemsRect = items.getBoundingClientRect();
+        if (dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY && itemsCS.display == "none" || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY) {
+            // Expande o dropdown clicado se já não estiver
+            items.style.display = "block";
+        } else {
+            // Contrai o dropdown que não foi clicado
+            items.style.display = "none";
+        }
+    }
+}
+
+// Listen que verifica os cliques do usuário para abrir ou fechar dropdowns
+window.addEventListener("click", dropdownToggle);
+
+// Listen que verifica se o dropdown está com o mouse sobreposto
+window.addEventListener("mouseover", dropdownToggle);
+
 // Função para o slideshow reduzida e generalizada
 function switchImg(img, imgMax) {
     document.getElementById("slideshow").src = "assets/img/slideImg/" + img + ".jpg";
