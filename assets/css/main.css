@@ -217,6 +217,12 @@ body {
 .img-xl {height: 3rem;}
 .img-xx {height: 4rem;}
 
+.light {color: var(--light);}
+.dark {color: var(--dark);}
+.lightPurple {color: var(--lightPurple);}
+.normalPurple {color: var(--normalPurple);}
+.darkPurple {color: var(--darkPurple);}
+
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
 .poppins{font-family: "Poppins";}
@@ -247,11 +253,9 @@ body {
     position: relative;
     display: block;
     font-weight: bold;
-    color: var(--dark);
 }
 
 .uil-bars {
-    color: var(--dark);
 }
 
 .board img{
