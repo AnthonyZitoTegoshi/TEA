@@ -205,6 +205,18 @@ body {
 .text-left {text-align: left;}
 .text-right {text-align: right;}
 
+.icon-sm {font-size: 0.5rem;}
+.icon-md {font-size: 1rem;}
+.icon-lg {font-size: 2rem;}
+.icon-xl {font-size: 3rem;}
+.icon-xx {font-size: 4rem;}
+
+.img-sm {height: 0.5rem;}
+.img-md {height: 1rem;}
+.img-lg {height: 2rem;}
+.img-xl {height: 3rem;}
+.img-xx {height: 4rem;}
+
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
 .poppins{font-family: "Poppins";}
@@ -238,12 +250,7 @@ body {
     color: var(--dark);
 }
 
-.navbar a img {
-    height: 3rem;
-}
-
 .uil-bars {
-    font-size: 3rem;
     color: var(--dark);
 }
 
