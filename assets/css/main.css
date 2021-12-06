@@ -186,7 +186,7 @@
 [class*="margin"] {
     margin: 10px;
 }
-.margin-5 {margin: 5px;}
+.margin-5  {margin: 5px;}
 .margin-10 {margin: 10px;}
 .margin-15 {margin: 15px;}
 .margin-20 {margin: 20px;}
@@ -206,9 +206,12 @@
 .navbar a {
     position: relative;
     display: block;
-    padding: 20px 40px;
     font-weight: bold;
     color: var(--dark);
+}
+
+.navbar-item a {
+    padding: 20px 40px;
 }
 
 .navbar a img {
@@ -232,4 +235,11 @@
     border-radius: 99999px;
     animation-name: navlink-hover;
     animation-duration: 0.3s;
+}
+
+.board img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+
 }
