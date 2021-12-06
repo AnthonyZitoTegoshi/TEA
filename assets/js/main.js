@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
 function windowResized() {
     // Pega a navbar e os seus filhos
     var navbarContract = document.getElementById("navbar-contract");
@@ -21,6 +34,13 @@ function windowResized() {
     }
 }
 
+    // Seta quando chamar a função de resize
+    window.addEventListener("resize", windowResized);
+    windowResized();
+
+/* Função para o SLIDE SHOW */ 
+
+
 function slide1(){
     document.getElementById('slide').src = "assets/img/slideImg/1.jpg";
     setTimeout("slide2()", 1000);
@@ -31,9 +51,9 @@ function slide2(){
 }
 function slide3(){
     document.getElementById('slide').src = "assets/img/slideImg/3.jpg";
+    setTimeout("slide1()", 1000);
+}
+
     setTimeout("slide1()",1000);
 }
 
-// Seta quando chamar a função de resize
-window.addEventListener("resize", windowResized);
-windowResized();
