@@ -1,5 +1,5 @@
 function windowResized() {
-    // Pega a navbar contraível
+    // Pega as navbars contraíveis
     var navbars = document.getElementsByClassName("navbar-contractible");
 
     // Arruma todas as navbars contraíveis
@@ -32,7 +32,7 @@ function windowResized() {
 window.addEventListener("resize", windowResized);
 windowResized();
 
-// Função para o SLIDE SHOW reduzida
+// Função para o slideshow reduzida e generalizada
 function switchImg(img, imgMax) {
     document.getElementById("slideshow").src = "assets/img/slideImg/" + img + ".jpg";
     setTimeout(switchImg, 3000, (++img > imgMax) ? 1 : img, imgMax);
