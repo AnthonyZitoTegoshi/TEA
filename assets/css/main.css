@@ -209,3 +209,13 @@
     font-weight: bold;
     color: var(--dark);    
 }
+
+@keyframes navbar-hover {
+    from {}
+    to {background-color: blue;}
+}
+
+.navbar-item a:hover ::after {
+    animation-name: navbar-hover;
+    animation-duration: 0.2s;
+}
