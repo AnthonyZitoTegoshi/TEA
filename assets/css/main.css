@@ -220,7 +220,6 @@ body {
 
 .navbar a img {
     height: 3rem;
-    /*max-width: 100%;/**/
 }
 
 @keyframes navlink-hover {

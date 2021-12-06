@@ -1,23 +1,30 @@
 function windowResized() {
-    // Pega a navbar e os seus filhos
-    var navbarContract = document.getElementById("navbar-contract");
-    var navbarItems = navbarContract.children;
+    // Pega a navbar contraível
+    var navbars = document.getElementsByClassName("navbar-contractible");
 
-    // Seta o display da navbar e do contraído
-    document.getElementById("navbar-contract").style.display = "block";
-    document.getElementById("navbar-contracted").style.display = "none";
+    // Arruma todas as navbars contraíveis
+    for (var i = 0; i < navbars.length; i++) {
+        // Pega seus elementos e os itens do primeiro
+        var firstChild = navbars[i].firstElementChild;
+        var lastChild = navbars[i].lastElementChild;
+        var items = firstChild.children;
 
-    // Pega o tamanho da navbar e dos filhos
-    var navbarWidth = navbarContract.clientWidth;
-    var itemsWidth = 0;
-    for (i = 0; i < navbarItems.length; i++) {
-        itemsWidth += navbarItems[i].clientWidth;
-    }
+        // Seta o display para o padrão definido
+        firstChild.style.display = "block";
+        lastChild.style.display = "none";
 
-    // Seta o contraído caso os filhos não caibam na navbar
-    if (itemsWidth > navbarWidth) {
-        navbarContract.style.display = "none";
-        document.getElementById("navbar-contracted").style.display = "block";
+        // Conta o tamanho do primeiro filho e dos seus itens
+        var maxWidth = firstChild.clientWidth;
+        var itemsWidth = 0;
+        for (var j = 0; j < items.length; j++) {
+            itemsWidth += items[j].clientWidth;
+        }
+
+        // Caso os filhos não caibam na navbar, seta para o modo contraído
+        if (itemsWidth > maxWidth) {
+            firstChild.style.display = "none";
+            lastChild.style.display = "block";
+        }
     }
 }
 
