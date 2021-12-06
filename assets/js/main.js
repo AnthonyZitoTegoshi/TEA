@@ -25,18 +25,11 @@ function windowResized() {
 window.addEventListener("resize", windowResized);
 windowResized();
 
-/* Função para o SLIDE SHOW */ 
+// Função para o SLIDE SHOW reduzida
+function switchImg(img, imgMax) {
+    document.getElementById("slideshow").src = "assets/img/slideImg/" + img + ".jpg";
+    setTimeout(switchImg, 3000, (++img > imgMax) ? 1 : img, imgMax);
+}
 
-
-function slide1(){
-    document.getElementById('slide').src = "assets/img/slideImg/1.jpg";
-    setTimeout("slide2()", 3000);
-}
-function slide2(){
-    document.getElementById('slide').src ="assets/img/slideImg/2.jpg";
-    setTimeout("slide3()",3000);
-}
-function slide3(){
-    document.getElementById('slide').src = "assets/img/slideImg/3.jpg";
-    setTimeout("slide1()", 3000);
-}
+// Começa a rodar o slideshow pela primeira imagem e mostra quantas são para rodar
+switchImg(1, 4);
