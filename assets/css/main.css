@@ -206,9 +206,12 @@
 .navbar a {
     position: relative;
     display: block;
-    padding: 20px 40px;
     font-weight: bold;
     color: var(--dark);
+}
+
+.navbar-item a {
+    padding: 20px 40px;
 }
 
 .navbar a img {
