@@ -347,7 +347,7 @@ body {
     top: 0;
 }
 
-.board img{
+.slideshow-board img{
     z-index: -1;
     position: fixed;
     top: 0;

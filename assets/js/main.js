@@ -87,7 +87,7 @@ window.addEventListener("mouseover", dropdownToggle);
 // Função para o slideshow reduzida e generalizada
 function switchImg(img, imgMax) {
     // Atribui a imagem atual ao src do slideshow
-    document.getElementById("slideshow").src = "assets/img/slideImg/" + img + ".jpg";
+    document.getElementById("main-slideshow").src = "assets/img/slideImg/" + img + ".jpg";
 
     // Chama a função novamente em 3s e envia a próxima imagem (a primeira caso esta seja a última)
     setTimeout(switchImg, 3000, (++img > imgMax) ? 1 : img, imgMax);
