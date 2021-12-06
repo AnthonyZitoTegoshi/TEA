@@ -62,14 +62,18 @@ function dropdownToggle(e) {
             // Pega o modelo retângulo do filho verdadeiros após o filho ficar visível
             var itemsRect = items.getBoundingClientRect();
 
-            // Expande o dropdown acionado se já não estiver
+            // Ajusta o posicionamento do filho para que não fique fora da tela
             if (itemsRect.left + itemsRect.width > window.innerWidth) {
                 items.style.left = itemsCS.left.substring(0, itemsCS.left.length - 2) - (itemsRect.left + itemsRect.width - window.innerWidth) + "px";
+            }
+            if (itemsRect.top + itemsRect.height > window.innerHeight) {
+                items.style.top = itemsCS.top.substring(0, itemsCS.top.length - 2) - (itemsRect.top + itemsRect.height - window.innerHeight) + "px";
             }
         } else {
             // Contrai o dropdown que não foi acionado
             items.style.display = "none";
             items.style.left = "unset";
+            items.style.top = "unset";
         }
     }
 }
