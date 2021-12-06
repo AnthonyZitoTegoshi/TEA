@@ -282,13 +282,18 @@ body {
     position: absolute;
     max-width: 100vw;
     max-height: 100vh;
-    width: max-content;
-    height: max-content;
+    width: auto;
+    height: auto;
     background-color: var(--light);
 }
 .dropdown-items-top-left {
     bottom: 100%;
     right: 0;
+}
+.dropdown-items-top-center {
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
 }
 .dropdown-items-top-right {
     bottom: 100%;
@@ -298,6 +303,11 @@ body {
     top: 100%;
     right: 0;
 }
+.dropdown-items-bottom-center {
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+}
 .dropdown-items-bottom-right {
     top: 100%;
     left: 0;
@@ -306,6 +316,11 @@ body {
     right: 100%;
     bottom: 0;
 }
+.dropdown-items-left-center {
+    right: 100%;
+    bottom: 50%;
+    transform: translateY(50%);
+}
 .dropdown-items-left-bottom {
     right: 100%;
     top: 0;
@@ -313,6 +328,11 @@ body {
 .dropdown-items-right-top {
     left: 100%;
     bottom: 0;
+}
+.dropdown-items-right-center {
+    left: 100%;
+    bottom: 50%;
+    transform: translateY(50%);
 }
 .dropdown-items-right-bottom {
     left: 100%;
