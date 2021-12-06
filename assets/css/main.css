@@ -204,6 +204,7 @@
 }
 
 .navbar a {
+    position: relative;
     display: block;
     padding: 20px 40px;
     font-weight: bold;
@@ -215,11 +216,20 @@
 }
 
 @keyframes navbar-hover {
-    from {}
-    to {background-color: blue;}
+    from {width: 0;}
+    to {width: calc(100% - 90px);}
 }
 
-.navbar-item a:hover ::after {
+.navbar-item a:hover::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 90px);
+    height: 5px;
+    background-color: var(--normalPurple);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 99999px;
     animation-name: navbar-hover;
-    animation-duration: 0.2s;
+    animation-duration: 0.3s;
 }
