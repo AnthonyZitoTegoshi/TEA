@@ -210,6 +210,10 @@
     color: var(--dark);    
 }
 
+.navbar a img {
+    width: 100%;
+}
+
 @keyframes navbar-hover {
     from {}
     to {background-color: blue;}
