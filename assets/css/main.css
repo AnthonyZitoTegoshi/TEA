@@ -217,6 +217,8 @@ body {
 .img-xl {height: 3rem;}
 .img-xx {height: 4rem;}
 
+.display-none {display: none;}
+
 .light {color: var(--light);}
 .dark {color: var(--dark);}
 .lightPurple {color: var(--lightPurple);}
@@ -254,10 +256,12 @@ body {
     display: block;
     font-weight: bold;
 }
-
-.uil-bars {
+/*
+.dropdown-menu {
+    position: relative;
+    display: block;
 }
-
+*/
 .board img{
     width: 100%;
     height: 50vh;

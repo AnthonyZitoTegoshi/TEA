@@ -30,7 +30,9 @@ function windowResized() {
 
 // Seta quando chamar a função de resize
 window.addEventListener("resize", windowResized);
-windowResized();
+
+// Chama a função uma vez quando estiver carregada a página
+window.addEventListener("load", windowResized);
 
 // Função para o slideshow reduzida e generalizada
 function switchImg(img, imgMax) {
