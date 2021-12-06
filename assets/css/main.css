@@ -11,7 +11,7 @@
 
 :root{
     /* Cores */
-    --light: #FFFFFF;
+    --light: #F5F5F5;
     --dark: #0E2431;
     --lightPurple: #FF00FF;
     --normalPurple: #9F00FF;
@@ -36,6 +36,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: var(--light);
 }
 
 .container {
@@ -202,9 +203,9 @@
     display: inline-block;   
 }
 
-.navbar-item a {
+.navbar a {
+    display: block;
     padding: 20px 40px;
     font-weight: bold;
-    color: var(--dark);
-    display: block;
+    color: var(--dark);    
 }
