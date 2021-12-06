@@ -45,19 +45,31 @@ function dropdownToggle(e) {
         // Pega o filho que deve aparecer ou desaparecer
         var items = dropdowns[i].firstElementChild;
 
-        // Pega os valores css do filho
+        // Pega os valores css do filho antes de ser displayado
         var itemsCS = getComputedStyle(items);
 
-        // Pega o modelo retângulo do filho
+        // Pega o modelo retângulo do filho antes de ser displayado
         var itemsRect = items.getBoundingClientRect();
 
         // Verifica se o mouse está ou não sobre o dropdown para mostrar ou não o filho
         if (dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY && itemsCS.display == "none" || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY) {
-            // Expande o dropdown clicado se já não estiver
+            // Ativa o filho para pegar os seus valores quando está visível
             items.style.display = "block";
+
+            // Pega os valores css do filho verdadeiros após o filho ficar visível
+            var itemsCS = getComputedStyle(items);
+
+            // Pega o modelo retângulo do filho verdadeiros após o filho ficar visível
+            var itemsRect = items.getBoundingClientRect();
+
+            // Expande o dropdown acionado se já não estiver
+            if (itemsRect.left + itemsRect.width > window.innerWidth) {
+                items.style.left = itemsCS.left.substring(0, itemsCS.left.length - 2) - (itemsRect.left + itemsRect.width - window.innerWidth) + "px";
+            }
         } else {
-            // Contrai o dropdown que não foi clicado
+            // Contrai o dropdown que não foi acionado
             items.style.display = "none";
+            items.style.left = "unset";
         }
     }
 }
