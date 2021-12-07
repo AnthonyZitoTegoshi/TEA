@@ -39,7 +39,7 @@ function dropdownToggle(e) {
     // Verifica qual foi o dropdown clicado
     var dropdowns = document.getElementsByClassName("dropdown-menu");
     for (var i = 0; i < dropdowns.length; i++) {
-        // Pega o modelo retângulo do dropdown
+        // Pega o modelo retângulo do dropdown 
         var dropdown = dropdowns[i].getBoundingClientRect();
         
         // Pega o filho que deve aparecer ou desaparecer
@@ -84,14 +84,37 @@ window.addEventListener("click", dropdownToggle);
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
 
-// Função para o slideshow reduzida e generalizada
-function switchImg(img, imgMax) {
-    // Atribui a imagem atual ao src do slideshow
-    document.getElementById("main-slideshow").src = "assets/img/slideImg/" + img + ".jpg";
 
-    // Chama a função novamente em 3s e envia a próxima imagem (a primeira caso esta seja a última)
-    setTimeout(switchImg, 3000, (++img > imgMax) ? 1 : img, imgMax);
+//Criando um slider
+
+img=[];
+slider;
+imgActual;
+maxImg;
+
+function load(){
+    slide = 1
+    for (i = 0; i < 3; i++) {
+        image[i]= new Image()
+        image[i].src = "/assets/img/slideImg/"+slide+".jpg";
+        slide++
+    }
+    
 }
 
-// Começa a rodar o slideshow pela primeira imagem e mostra quantas são para rodar
-switchImg(1, 4);
+function loadimg(img){
+    slider.style.backgroundImage ="url('"+image[img].src+"')";
+
+}
+
+function begin(){
+    load();
+    imgActual =0;
+    maxImg= image.length;
+    slider =document.getElementsByClassName("slideshow-board")
+    carregarImg(imgActual)
+
+}
+
+window.addEventListener("load",begin);
+
