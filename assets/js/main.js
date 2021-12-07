@@ -98,8 +98,9 @@ var pickup = $('.slide');
 var sli = 0;
 setInterval(function () {
     sli = (++sli > img_array.length - 1) ? 0 : sli;
-    pickup.fadeOut(1000, () => {
+    
+    pickup.fadeOut(2000, () => {
         pickup.attr('src', img_array[sli]);
-        pickup.fadeIn(1000);
+        pickup.fadeIn(2000);
     });
-}, 3000);
+}, 4000);
