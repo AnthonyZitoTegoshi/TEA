@@ -262,6 +262,32 @@ body {
 .max-height-11 {max-height: 91.6666%;}
 .max-height-12 {max-height: 100%;}
 
+.min-width-1 {min-width: 8.3333%;}
+.min-width-2 {min-width: 16.6666%;}
+.min-width-3 {min-width: 25%;}
+.min-width-4 {min-width: 33.3333%;}
+.min-width-5 {min-width: 41.6666%;}
+.min-width-6 {min-width: 50%;}
+.min-width-7 {min-width: 58.3333%;}
+.min-width-8 {min-width: 66.6666%;}
+.min-width-9 {min-width: 75%;}
+.min-width-10 {min-width: 83.3333%;}
+.min-width-11 {min-width: 91.6666%;}
+.min-width-12 {min-width: 100%;}
+
+.min-height-1 {min-height: 8.3333%;}
+.min-height-2 {min-height: 16.6666%;}
+.min-height-3 {min-height: 25%;}
+.min-height-4 {min-height: 33.3333%;}
+.min-height-5 {min-height: 41.6666%;}
+.min-height-6 {min-height: 50%;}
+.min-height-7 {min-height: 58.3333%;}
+.min-height-8 {min-height: 66.6666%;}
+.min-height-9 {min-height: 75%;}
+.min-height-10 {min-height: 83.3333%;}
+.min-height-11 {min-height: 91.6666%;}
+.min-height-12 {min-height: 100%;}
+
 .display-none {display: none;}
 .display-block {display: block;}
 .display-inline-block {display: inline-block;}
