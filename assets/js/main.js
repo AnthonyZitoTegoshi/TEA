@@ -134,7 +134,7 @@ window.addEventListener("load",begin);
 
 //Tentativa-2
 function slide1(){
-    document.getElementById('banner').src="assets/img/slideImg/1.jpg";
+    document.getElementById('banner').src="assets/img/slideImg/6.jpg";
     setTimeout("slide2()", 1000)
     }
     
