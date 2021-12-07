@@ -87,8 +87,6 @@ window.addEventListener("mouseover", dropdownToggle);
 
 //Criando um slider
 
-
-alert('oi');
 //Tentativa-2
 function slide1(){
     document.getElementById('banner').src="assets/img/slideImg/6.jpg";
@@ -117,9 +115,7 @@ let img_array=[
 let pickup = $('.slideshow-board');
 alert(pickup);
 let sli = 0;
-setInterval(function(){
-    sli = (sli + 1) % img_array.length
-});
+
 $(document).ready(function () {
     pickup.fadeOut(1000, ()=>{
         pickup.attr('src', img_array[sli]);
