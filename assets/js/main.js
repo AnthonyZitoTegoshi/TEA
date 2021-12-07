@@ -116,5 +116,12 @@ function begin(){
 
 }
 
+function change(){
+    imgActual++
+    if(imgActual>maxImg){
+        imgActual = 0;
+    }
+}
+
 window.addEventListener("load",begin);
 
