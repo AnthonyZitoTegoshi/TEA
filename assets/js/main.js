@@ -84,46 +84,22 @@ window.addEventListener("click", dropdownToggle);
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
 
-
-//Criando um slider
-
-
-alert('oi');
-//Tentativa-2
-function slide1(){
-    document.getElementById('banner').src="assets/img/slideImg/6.jpg";
-    setTimeout("slide2()", 1000);
-    }
-    
-function slide2(){
-    document.getElementById('banner').src="assets/img/slideImg/2.jpg";
-    setTimeout("slide3()", 1000);
-    }
-    
-function slide3(){
-    document.getElementById('banner').src="assets/img/slideImg/3.jpg";
-    setTimeout("slide1()", 1000);
-    }
-
 //jquery activation
 
-let img_array=[
+var img_array = [
     'assets/img/slideImg/1.jpg',
     'assets/img/slideImg/2.jpg',
     'assets/img/slideImg/3.jpg',
     'assets/img/slideImg/4.jpg'
 ];
 
-let pickup = $('.slideshow-board');
-alert(pickup);
-let sli = 0;
-setInterval(function(){
-    sli = (sli + 1) % img_array.length
-});
-$(document).ready(function () {
-    pickup.fadeOut(1000, ()=>{
+var pickup = $('.slide');
+
+var sli = 0;
+setInterval(function () {
+    sli = (++sli > img_array.length - 1) ? 0 : sli;
+    pickup.fadeOut(1000, () => {
         pickup.attr('src', img_array[sli]);
         pickup.fadeIn(1000);
-    });    
-},3000);
-
+    });
+}, 3000);
