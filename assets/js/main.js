@@ -103,8 +103,11 @@ function load(){
 }
 
 function loadimg(img){
-    slider.style.backgroundImage ="url('"+image[img].src+"')";
-
+     slider = document.createElement("IMG");
+     img.src = "/assets/img/slideImg/1.jpg";
+     img.style.width = "30px";
+     img.style.height = "30px";
+     document.getElementsByClassName('slideshow-board').appendChild(img);
 }
 
 function begin(){
@@ -121,6 +124,9 @@ function change(){
     if(imgActual>maxImg){
         imgActual = 0;
     }
+    carregarImg(imgActual);
+    time = setInterval(change, 1000);
+
 }
 
 window.addEventListener("load",begin);
