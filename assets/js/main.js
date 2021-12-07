@@ -131,3 +131,41 @@ function change(){
 
 window.addEventListener("load",begin);
 
+
+//Tentativa-2
+function slide1(){
+    document.getElementById('banner').src="assets/img/slideImg/1.jpg";
+    setTimeout("slide2()", 1000)
+    }
+    
+function slide2(){
+    document.getElementById('banner').src="assets/img/slideImg/2.jpg";
+    setTimeout("slide3()", 1000)
+    }
+    
+function slide3(){
+    document.getElementById('banner').src="assets/img/slideImg/3.jpg";
+    setTimeout("slide1()", 1000)
+    }
+   
+//jquery activation
+
+let img_array=[
+    'assets/img/slideImg/1.jpg',
+    'assets/img/slideImg/2.jpg',
+    'assets/img/slideImg/3.jpg',
+    'assets/img/slideImg/4.jpg'
+]
+
+let pickup = $('.slideshow-board')
+let sli = 0;
+setInterval(function(){
+    sli = (sli + 1)%img_array.length
+})
+$(document).ready(function () {
+    pickup.fadeOut(1000, ()=>{
+        pickup.attr('src', img_array[sli]);
+        pickup.fadeIn(1000);
+    });    
+},3000);
+
