@@ -30,6 +30,10 @@
     font-family: "Poppins";
     src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
+@font-face {
+    font-family: "Graphik-Medium", "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url();
+}
 
 /* Animação de aparecer borda inferior no link da navbar */
 @keyframes navbar-link-hover {
@@ -428,13 +432,10 @@ body {
 
 .text-slide {
     position: fixed;
-    font-size: 32px;
     left: 25%;
-    top: 50%;
-    color: blue;
+    top: 70%;
+    color: white;
     z-index: 2;
-    background-color: white;
-    opacity: 85%;
      
 }
 
