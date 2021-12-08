@@ -426,5 +426,17 @@ body {
     filter: brightness(50%);   
 }
 
+.text-slide {
+    position: fixed;
+    font-size: 32px;
+    left: 25%;
+    top: 50%;
+    color: blue;
+    z-index: 2;
+    background-color: white;
+    opacity: 85%;
+     
+}
+
 
 

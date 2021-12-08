@@ -86,7 +86,7 @@ window.addEventListener("mouseover", dropdownToggle);
 
 //jquery activation
 
-var img_array = [
+/*var img_array = [
     'assets/img/slideImg/1.jpg',
     'assets/img/slideImg/2.jpg',
     'assets/img/slideImg/3.jpg',
@@ -104,3 +104,4 @@ setInterval(function () {
         pickup.fadeIn(2000);
     });
 }, 4000);
+*/
