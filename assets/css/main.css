@@ -31,8 +31,8 @@
     src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: "Graphik-Medium", "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    src: url();
+    font-family: "Graphik";
+    src: url("../fonts/Graphik/GraphikRegular.otf");
 }
 
 /* Animação de aparecer borda inferior no link da navbar */
@@ -325,6 +325,7 @@ body {
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
 .poppins{font-family: "Poppins";}
+.graphik{font-family: "Graphik"; font-weight: 500;}
 
 .navbar li a {
     padding: 20px 40px;
