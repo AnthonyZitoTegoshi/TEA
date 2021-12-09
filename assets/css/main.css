@@ -53,7 +53,11 @@ body {
     font-size: 1rem;
 }
 
-img {
+h1, h2, h3, h4, h5, h6, p {
+    overflow-inline: auto;
+}
+
+.img-fluid {
     width: 100%;
     height: auto;
 }
@@ -864,7 +868,7 @@ img {
     max-height: 100vh;
     width: max-content;
     height: max-content;
-    overflow: scroll;
+    overflow: auto;
     background-color: var(--light);
 }
 .dropdown-items-top-left {
