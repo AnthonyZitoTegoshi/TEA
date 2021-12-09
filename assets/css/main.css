@@ -572,7 +572,3 @@ body {
     object-fit: cover;
     filter: brightness(20%);   
 }
-
-.members-img img{
-    width: 3000px;
-}
