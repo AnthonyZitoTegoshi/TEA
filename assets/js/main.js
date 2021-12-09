@@ -27,9 +27,12 @@ function windowResized() {
         }
     }
 
-    // Pega o container de boas vindas e seta para ter o resto do tamanho da tela
+    // Pega o container de boas vindas e o header acima dele e seta para ter o resto do tamanho da tela
+    var header = document.getElementById("header");
     var welcomeContainer = document.getElementById("welcome-container");
-    welcomeContainer.style.height = (window.innerHeight - welcomeContainer.getBoundingClientRect().top) + "px";
+    var height = window.innerHeight - (welcomeContainer.getBoundingClientRect().top - header.getBoundingClientRect().top);
+    var minHeight = welcomeContainer.firstElementChild.getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2));
+    welcomeContainer.style.height = (height > minHeight ? height : minHeight) + "px";
 }
 
 // Seta quando chamar a função de resize
