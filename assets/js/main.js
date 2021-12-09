@@ -26,6 +26,10 @@ function windowResized() {
             lastChild.style.display = "block";
         }
     }
+
+    // Pega o container de boas vindas e seta para ter o resto do tamanho da tela
+    var welcomeContainer = document.getElementById("welcome-container");
+    welcomeContainer.style.height = (window.innerHeight - welcomeContainer.getBoundingClientRect().top) + "px";
 }
 
 // Seta quando chamar a função de resize
