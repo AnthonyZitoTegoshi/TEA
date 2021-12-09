@@ -440,18 +440,28 @@ body {
 .light-purple {color: var(--lightPurple);}
 .normal-purple {color: var(--normalPurple);}
 .dark-purple {color: var(--darkPurple);}
+.purple-gradient {
+    background: -webkit-linear-gradient(-45deg, #FF00FF, #9F00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .bg-light {background-color: var(--light);}
 .bg-dark {background-color: var(--dark);}
 .bg-light-purple {background-color: var(--lightPurple);}
 .bg-normal-purple {background-color: var(--normalPurple);}
 .bg-dark-purple {background-color: var(--darkPurple);}
-.bg-purple-gradient{background-image: linear-gradient(45deg , #FF00FF, #9F00FF);}
+.bg-purple-gradient{background-image: linear-gradient(-45deg , #FF00FF, #9F00FF);}
 
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
 .poppins{font-family: "Poppins";}
 .graphik {font-family: "Graphik"; font-weight: 500;}
+
+.font-weight-lighter {font-weight: lighter;}
+.font-weight-normal {font-weight: normal;}
+.font-weight-bold {font-weight: bold;}
+.font-weight-bolder {font-weight: bolder;}
 
 .navbar li a {
     padding: 20px 40px;
@@ -475,6 +485,12 @@ body {
     position: relative;
     display: block;
     font-weight: bold;
+}
+
+#pre-welcome:first-child {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .dropdown-menu {
@@ -546,7 +562,7 @@ body {
     top: 0;
 }
 
-.slideshow-board img{
+#banner {
     z-index: -1;
     position: fixed;
     top: 0;
