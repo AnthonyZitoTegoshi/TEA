@@ -4,6 +4,21 @@ function windowLoaded() {
     welcomeContainer.style.minHeight = (welcomeContainer.getElementsByClassName("rule")[0].getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2))) + "px";
 }
 
+function windowScrolled(e) {
+    var headerSticky = document.getElementById("header-sticky");
+    var postWelcome = document.getElementById("post-welcome");
+    var classes = headerSticky.classList;
+    for (var j = 0; j < classes.length; j++) {
+        if (classes[j] == "lift-10") {
+            classes.remove(classes[j]);
+        }
+    }
+    headerSticky.setAttribute("class", classes.toString());
+    if (headerSticky.getBoundingClientRect().height > postWelcome.getBoundingClientRect().top) {
+        headerSticky.setAttribute("class", classes.toString() + " lift-10");
+    }
+}
+
 function windowResized() {
     // Pega as navbars contraíveis
     var navbars = document.getElementsByClassName("navbar-contractible");
@@ -35,12 +50,16 @@ function windowResized() {
 
     // Pega o container de boas vindas e o que vem acima dele e seta para ter o resto do tamanho da tela, contando que ele vai ter o min height
     var preWelcome = document.getElementById("pre-welcome");
-    var welcomeContainer = document.getElementById("welcome-container");alert(preWelcome.getBoundingClientRect().top);
-    welcomeContainer.style.height = (window.innerHeight - (welcomeContainer.getBoundingClientRect().top - preWelcome.getBoundingClientRect().top)) + "px";
+    var welcomeContainer = document.getElementById("welcome-container");
+    var welcomeTop = welcomeContainer.getBoundingClientRect().top - preWelcome.getBoundingClientRect().top;
+    welcomeContainer.style.height = (window.innerHeight - welcomeTop) + "px";
 }
 
 // Seta quando chamar a função de resize
 window.addEventListener("resize", windowResized);
+
+// Seta quando chamar a função de scroll
+window.addEventListener("scroll", windowScrolled);
 
 // Chama a função uma vez quando estiver carregada a página
 window.addEventListener("load", windowResized);

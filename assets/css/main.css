@@ -487,7 +487,7 @@ body {
     font-weight: bold;
 }
 
-#pre-welcome:first-child {
+#header-sticky {
     position: sticky;
     top: 0;
     z-index: 1;
