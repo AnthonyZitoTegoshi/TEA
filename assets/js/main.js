@@ -2,14 +2,6 @@ function windowLoaded() {
     // Seta o tamanho mínimo das boas vindas
     var welcomeContainer = document.getElementById("welcome-container");
     welcomeContainer.style.minHeight = (welcomeContainer.getElementsByClassName("rule")[0].getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2))) + "px";
-
-    // Pega os markers e os faz ficarem transformados em relação ao tamanho do header
-    var markers = document.getElementsByClassName("marker");
-    var height = document.getElementById("header-sticky").getBoundingClientRect().height;
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].style.position = "absolute";
-        markers[i].style.top = (markers[i].getBoundingClientRect().top - height) + "px";
-    }
 }
 
 function windowScrolled(e) {
@@ -61,6 +53,14 @@ function windowResized() {
     var welcomeContainer = document.getElementById("welcome-container");
     var welcomeTop = welcomeContainer.getBoundingClientRect().top - preWelcome.getBoundingClientRect().top;
     welcomeContainer.style.height = (window.innerHeight - welcomeTop) + "px";
+
+    // Pega os markers e os faz ficarem transformados em relação ao tamanho do header
+    var markers = document.getElementsByClassName("marker");
+    var height = document.getElementById("header-sticky").getBoundingClientRect().height;
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].style.position = "absolute";
+        markers[i].style.transform = "translateY(-" + (height) + "px)";
+    }
 }
 
 // Seta quando chamar a função de resize
