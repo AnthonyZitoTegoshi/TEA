@@ -327,6 +327,38 @@ body {
 .border-purple-gradient:is(.border-3):not([class*="padding"]) {padding: 3px;}
 .border-purple-gradient:is(.border-4):not([class*="padding"]) {padding: 4px;}
 
+[class*="offset"] {
+    position: relative;
+}
+[class*="offset-top"] {
+    top: 10px;
+}
+[class*="offset-right"] {
+    right: 10px;
+}
+[class*="offset-bottom"] {
+    bottom: 10px;
+}
+[class*="offset-left"] {
+    left: 10px;
+}
+.offset-top-5 {top: 5px;}
+.offset-top-10 {top: 10px;}
+.offset-top-15 {top: 15px;}
+.offset-top-20 {top: 20px;}
+.offset-right-5 {right: 5px;}
+.offset-right-10 {right: 10px;}
+.offset-right-15 {right: 15px;}
+.offset-right-20 {right: 20px;}
+.offset-bottom-5 {bottom: 5px;}
+.offset-bottom-10 {bottom: 10px;}
+.offset-bottom-15 {bottom: 15px;}
+.offset-bottom-20 {bottom: 20px;}
+.offset-left-5 {left: 5px;}
+.offset-left-10 {left: 10px;}
+.offset-left-15 {left: 15px;}
+.offset-left-20 {left: 20px;}
+
 [class*="padding"] {
     padding: 10px;
 }
