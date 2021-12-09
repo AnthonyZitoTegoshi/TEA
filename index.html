@@ -21,93 +21,102 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body onload="slide1()">
+<body>
     <!------------------------------HEADER------------------------------>
-    <header id="header" class="container padding-10 poppins dark bg-light">
-        <div class="row-center">
-            <div class="col-8-xl col-9-md col-10-sm">
-                <div class="container">
-                    <nav class="row flex-nowrap items-center">
-                        <div class="col fit-child">
-                            <div class="container">
-                                <div class="row-center items-center">
-                                    <div class="col navbar">
-                                        <a href="#logo"><img class="img-xl" src="assets/img/logo/light_theme/tea_logo_light_colored.png"></a>
+    <div id="pre-welcome">
+        <header class="container padding-10 poppins dark bg-light">
+            <div class="row-center">
+                <div class="col-8-xl col-9-md col-10-sm">
+                    <div class="container">
+                        <nav class="row flex-nowrap items-center">
+                            <div class="col fit-child">
+                                <div class="container">
+                                    <div class="row-center items-center">
+                                        <div class="col navbar">
+                                            <a href="#logo"><img class="img-xl" src="assets/img/logo/light_theme/tea_logo_light_colored.png"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col text-right font-size-sm">
-                            <div class="container">
-                                <div class="row items-center">
-                                    <div class="col navbar navbar-contractible">
-                                        <ul class="display-none"><li class="display-inline-block"><a href="#sobre">Sobre</a></li><li class="display-inline-block"><a href="#envolvidos">Envolvidos</a></li><li class="display-inline-block"><a href="#produtos">Produtos & Serviços</a></li><li class="display-inline-block"><a href="#contato">Contato</a></li></ul>
-                                        <div class="container display-none">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <i class="uil uil-bars icon-xl dropdown-menu light-purple">
-                                                        <div class="container dropdown-items-bottom-left font-size-sm padding-10 radius-10 lift dark">
-                                                            <ul class="row flex-column items-end">
-                                                                <li class="col fit-child"><a href="#sobre">Sobre</a></li><li class="col fit-child"><a href="#envolvidos">Envolvidos</a></li><li class="col fit-child"><a href="#produtos">Produtos & Serviços</a></li><li class="col fit-child"><a href="#contato">Contate-nos</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </i>
+                            <div class="col text-right font-size-sm">
+                                <div class="container">
+                                    <div class="row items-center">
+                                        <div class="col navbar navbar-contractible">
+                                            <ul class="display-none"><li class="display-inline-block"><a href="#sobre">Sobre</a></li><li class="display-inline-block"><a href="#envolvidos">Envolvidos</a></li><li class="display-inline-block"><a href="#produtos">Produtos & Serviços</a></li><li class="display-inline-block"><a href="#contato">Contato</a></li></ul>
+                                            <div class="container display-none">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <i class="uil uil-bars icon-xl dropdown-menu purple-gradient">
+                                                            <div class="container dropdown-items-bottom-left font-size-sm padding-10 radius-10 lift dark">
+                                                                <ul class="row flex-column items-end">
+                                                                    <li class="col fit-child"><a href="#sobre">Sobre</a></li><li class="col fit-child"><a href="#envolvidos">Envolvidos</a></li><li class="col fit-child"><a href="#produtos">Produtos & Serviços</a></li><li class="col fit-child"><a href="#contato">Contate-nos</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <!------------------------------SLIDESHOW------------------------------>
     <section class="container poppins font-size-sm">
         <div class="row-between">
-            <div class="col-12-lg"> 
-                <div class="slideshow-board ">
-                    <img src="assets/img/slideImg/1.jpg" class= "slide" id="banner" style="height: 70hv;">
-                </div>
+            <div class="col-12-lg">
+                <img src="assets/img/slideImg/1.jpg" id="banner" class="slide">
                 <div id="welcome-container" class="container padding-20">
-                    <div class="row">
-                        <div class="col-8-xl col-9-md col-10-sm">
-                            <div class="row-center-xs row-start-sm items-center">
-                                <div class="col fit-child light">
-                                    <div class="container">
-                                        <div class="row-center flex-column text-center-xs text-left-sm">
-                                            <h2 class="col nunito font-size-xl line-md padding-10">Seja Bem-Vindo à TEA</h2>
-                                            <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md">Somos a empresa de <span class="dark bg-light padding-5 radius-5 display-inline-block">Desenvolvimento Web</span></p></div></div>
-                                            <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md"><span class="dark bg-purple-gradient padding-5 radius-5 display-inline-block">Responsabilidade</span> nos define</p></div></div>
-                                            <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md">Conte conosco para <span class="dark bg-light padding-5 radius-5 display-inline-block">Alavancar Seus Negócios</span></p></div></div>
+                    <div class="row items-center">
+                        <div class="row height-content rule">
+                            <div class="col-8-xl col-9-md col-10-sm">
+                                <div class="row-center-xs row-start-sm items-center">
+                                    <div class="col fit-child light">
+                                        <div class="container">
+                                            <div class="row-center flex-column text-center-xs text-left-sm">
+                                                <h2 class="col nunito font-size-xl line-md padding-10">Seja Bem-Vindo à TEA</h2>
+                                                <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md">Somos a empresa de <span class="nunito font-weight-bolder bg-purple-gradient padding-5 radius-5 display-inline-block">Desenvolvimento Web</span></p></div></div>
+                                                <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md"><span class="nunito font-weight-bolder bg-purple-gradient padding-5 radius-5 display-inline-block">Responsabilidade</span> nos define</p></div></div>
+                                                <div class="col"><div class="border-light padding-10 radius-5 margin-10"><p class="line-md">Conte conosco para <span class="nunito font-weight-bolder bg-purple-gradient padding-5 radius-5 display-inline-block">Alavancar Seus Negócios</span></p></div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>  
+                                </div>  
+                            </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
     <!------------------------------HISTÓRIA------------------------------>
-    <section class="container padding-20 poppins dark bg-light">
+    <section id="post-welcome" class="container padding-20 poppins dark bg-light">
         <div class="row-center flex-nowrap">
             <div class="col-6-xx col-7-xl col-8-lg col-9-md col-10-sm">
-                <h2 class="nunito font-size-xl line-md text-center">Como tudo começou...</h2>
                 <div class="container">
-                    <div class="row-center">
-                        <div class="col max-width-6 fit-child">
-                            <p class="text-justify line-md padding-10">Caro e estimado cliente, a história data de antes de setembro de 2021, quando fomos propostos a criar uma equipe desenvolvedora de sistemas para internet cuja finalidade última seria a avaliação final do curso técnico em informática para internet integrado ao ensino médio do IFSP - Guarulhos.</p>
-                            <p class="text-justify line-md padding-10">Nós, integrantes, nos conhecemos há um bom tempo e somos amigos desde o começo do curso. Então, juntando com a nossa disponibilidade a aprender sempre mais na área da informática, formamos um ótimo time para trabalhar duro e fazer a empresa crescer e ajudar os clientes em seus negócios...</p>
-                            <p class="text-justify line-md padding-10">E para tirar nosso "10 com louvor" também, né!?</p>
+                    <div class="row-center items-center flex-column">
+                        <div class="col fit-child padding-20">
+                            <h2 class="nunito font-size-xl line-md text-center">Como tudo começou...</h2>
                         </div>
-                        <div class="col max-width-5 fit-child">
-                            asd
+                        <div class="col">
+                            <div class="container">
+                                <div class="row-evenly items-center">
+                                    <div class="col max-width-6 fit-child">
+                                        <p class="text-justify line-md padding-10">Caro e estimado cliente, a história data de antes de setembro de 2021, quando fomos propostos a criar uma equipe desenvolvedora de sistemas para internet cuja finalidade última seria a avaliação final do curso técnico em informática para internet integrado ao ensino médio do IFSP - Guarulhos.</p>
+                                        <p class="text-justify line-md padding-10">Nós, integrantes, nos conhecemos há um bom tempo e somos amigos desde o começo do curso. Então, juntando com a nossa disponibilidade a aprender sempre mais na área da informática, formamos um ótimo time para trabalhar duro e fazer a empresa crescer e ajudar os clientes em seus negócios...</p>
+                                        <p class="text-justify line-md padding-10">E para tirar nosso "10 com louvor" também, né!?</p>
+                                    </div>
+                                    <div class="col max-width-5 fit-child">
+                                        asd
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
