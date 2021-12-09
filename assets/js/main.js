@@ -9,13 +9,13 @@ function windowScrolled(e) {
     var postWelcome = document.getElementById("sobre");
     var classes = headerSticky.classList;
     for (var j = 0; j < classes.length; j++) {
-        if (classes[j] == "lift-10") {
+        if (classes[j] == "lift-4") {
             classes.remove(classes[j]);
         }
     }
     headerSticky.setAttribute("class", classes.toString());
     if (headerSticky.getBoundingClientRect().height > postWelcome.getBoundingClientRect().top) {
-        headerSticky.setAttribute("class", classes.toString() + " lift-10");
+        headerSticky.setAttribute("class", classes.toString() + " lift-4");
     }
 }
 
@@ -42,7 +42,7 @@ function windowResized() {
         }
 
         // Caso os filhos não caibam na navbar, seta para o modo contraído
-        if (itemsWidth > maxWidth) {
+        if (itemsWidth >= maxWidth) {
             firstChild.style.display = "none";
             lastChild.style.display = "block";
         }
@@ -59,7 +59,7 @@ function windowResized() {
     var height = document.getElementById("header-sticky").getBoundingClientRect().height;
     for (var i = 0; i < markers.length; i++) {
         markers[i].style.position = "absolute";
-        markers[i].style.transform = "translateY(-" + (height) + "px)";
+        markers[i].style.transform = "translateY(-" + height + "px)";
     }
 }
 
