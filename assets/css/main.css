@@ -12,6 +12,7 @@
 :root{
     /* Cores */
     --light: #FFFFFF;
+    --dark: #121212;
     /*--dark: #0E2431;/**/
     --dark: #000000;
     --lightPurple: #FF00FF;
@@ -56,6 +57,10 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     overflow-inline: auto;
+}
+
+p {
+    text-indent: 2rem;
 }
 
 .img-fluid {
