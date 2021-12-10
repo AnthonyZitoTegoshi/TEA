@@ -709,12 +709,31 @@ h1, h2, h3, h4, h5, h6, p {
 .icon-xl, .font-size-xl {font-size: 2.5rem;}
 .icon-xx, .font-size-xx {font-size: 3rem;}
 
-.img-xs {height: 0.5rem;}
-.img-sm {height: 1rem;}
-.img-md {height: 1.5rem;}
-.img-lg {height: 2rem;}
-.img-xl {height: 2.5rem;}
-.img-xx {height: 3rem;}
+.height-xs {height: 0.5rem;}
+.height-sm {height: 1rem;}
+.height-md {height: 1.5rem;}
+.height-lg {height: 2rem;}
+.height-xl {height: 2.5rem;}
+.height-xx {height: 3rem;}
+.height-4 {height: 4rem;}
+.height-5 {height: 5rem;}
+.height-6 {height: 6rem;}
+
+.width-xs {width: 0.5rem;}
+.width-sm {width: 1rem;}
+.width-md {width: 1.5rem;}
+.width-lg {width: 2rem;}
+.width-xl {width: 2.5rem;}
+.width-xx {width: 3rem;}
+.width-4 {width: 4rem;}
+.width-5 {width: 5rem;}
+.width-6 {width: 6rem;}
+
+.rounded {
+    border-radius: 99999px;
+    object-position: center;
+    object-fit: cover;
+}
 
 .line-xs {line-height: 0.5em;}
 .line-sm {line-height: 1em;}
