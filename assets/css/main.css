@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xs */
 @media only screen and (min-width: 1px) {
-    :root {font-size: 14px;}
+    :root {font-size: 12px;}
 
     .row-between-xs {justify-content: space-between;}
     .row-evenly-xs {justify-content: space-evenly;}
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os sm */
 @media only screen and (min-width: 801px) {
-    :root {font-size: 16px;}
+    :root {font-size: 14px;}
 
     .row-between-sm {justify-content: space-between;}
     .row-evenly-sm {justify-content: space-evenly;}
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os lg */
 @media only screen and (min-width: 1601px) {
-    :root {font-size: 16px;}
+    :root {font-size: 18px;}
 
     .row-between-lg {justify-content: space-between;}
     .row-evenly-lg {justify-content: space-evenly;}
@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xl */
 @media only screen and (min-width: 2101px) {
-    :root {font-size: 18px;}
+    :root {font-size: 20px;}
 
     .row-between-xl {justify-content: space-between;}
     .row-evenly-xl {justify-content: space-evenly;}
@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xx */
 @media only screen and (min-width: 3441px) {
-    :root {font-size: 18px;}
+    :root {font-size: 22px;}
 
     .row-between-xx {justify-content: space-between;}
     .row-evenly-xx {justify-content: space-evenly;}
