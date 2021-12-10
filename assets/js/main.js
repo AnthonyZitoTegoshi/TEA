@@ -1,3 +1,13 @@
+// Função que mostra o restante de um texto longo
+function displayText(id) {
+    var e = document.getElementById(id);
+    var children = e.parentElement.children;
+    e.style.display = "none";
+    for (var i = 1; i < children.length; i++) {
+        children[i].style.display = "block";
+    }
+}
+
 function windowLoaded() {
     // Seta o tamanho mínimo das boas vindas
     var welcomeContainer = document.getElementById("welcome-container");
@@ -6,7 +16,7 @@ function windowLoaded() {
 
 function windowScrolled(e) {
     var headerSticky = document.getElementById("header-sticky");
-    var postWelcome = document.getElementById("sobre");
+    var postWelcome = document.getElementById("begin-lift");
     var classes = headerSticky.classList;
     for (var j = 0; j < classes.length; j++) {
         if (classes[j] == "lift-4") {

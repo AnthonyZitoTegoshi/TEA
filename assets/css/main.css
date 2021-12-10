@@ -13,6 +13,8 @@
     /* Cores */
     --light: #FFFFFF;
     --dark: #121212;
+    /*--dark: #0E2431;/**/
+    --dark: #000000;
     --lightPurple: #FF00FF;
     --normalPurple: #9F00FF;
     --darkPurple: #3F00FF;
@@ -97,7 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xs */
 @media only screen and (min-width: 1px) {
-    :root {font-size: 14px;}
+    :root {font-size: 12px;}
 
     .row-between-xs {justify-content: space-between;}
     .row-evenly-xs {justify-content: space-evenly;}
@@ -184,7 +186,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os sm */
 @media only screen and (min-width: 801px) {
-    :root {font-size: 16px;}
+    :root {font-size: 14px;}
 
     .row-between-sm {justify-content: space-between;}
     .row-evenly-sm {justify-content: space-evenly;}
@@ -358,7 +360,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os lg */
 @media only screen and (min-width: 1601px) {
-    :root {font-size: 16px;}
+    :root {font-size: 18px;}
 
     .row-between-lg {justify-content: space-between;}
     .row-evenly-lg {justify-content: space-evenly;}
@@ -445,7 +447,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xl */
 @media only screen and (min-width: 2101px) {
-    :root {font-size: 18px;}
+    :root {font-size: 20px;}
 
     .row-between-xl {justify-content: space-between;}
     .row-evenly-xl {justify-content: space-evenly;}
@@ -532,7 +534,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Para os xx */
 @media only screen and (min-width: 3441px) {
-    :root {font-size: 18px;}
+    :root {font-size: 22px;}
 
     .row-between-xx {justify-content: space-between;}
     .row-evenly-xx {justify-content: space-evenly;}
@@ -617,6 +619,12 @@ h1, h2, h3, h4, h5, h6, p {
     .min-height-12-xx {min-height: 100%;}
 }
 
+.max-width-500 {max-width: 500px;}
+.max-width-400 {max-width: 400px;}
+
+.text-hidden > p {display: none;}
+.text-hidden > a {display: inline-block;}
+
 /* Não é usado diretamente em col, utilize em seus filhos como alternativa */
 [class*="radius"] {
     border-radius: 99999px;
@@ -639,14 +647,18 @@ h1, h2, h3, h4, h5, h6, p {
 .border-light-purple {border-color: var(--lightPurple);}
 .border-normal-purple {border-color: var(--normalPurple);}
 .border-dark-purple {border-color: var(--darkPurple);}
-.border-purple-gradient {
+.border-dark-gradient {
     border: 0px solid transparent;
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
 }
-.border-purple-gradient:is([class*="border"]):not([class*="padding"]) {padding: 1px;}
-.border-purple-gradient:is(.border-2):not([class*="padding"]) {padding: 2px;}
-.border-purple-gradient:is(.border-3):not([class*="padding"]) {padding: 3px;}
-.border-purple-gradient:is(.border-4):not([class*="padding"]) {padding: 4px;}
+.border-light-gradient {
+    border: 0px solid transparent;
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
+}
+[class*="border"]:not([class*="padding"]) {padding: 1px;}
+.border-2:not([class*="padding"]) {padding: 2px;}
+.border-3:not([class*="padding"]) {padding: 3px;}
+.border-4:not([class*="padding"]) {padding: 4px;}
 
 [class*="offset"] {
     position: relative;
@@ -687,6 +699,22 @@ h1, h2, h3, h4, h5, h6, p {
 .padding-10 {padding: 10px;}
 .padding-15 {padding: 15px;}
 .padding-20 {padding: 20px;}
+
+[class*="padding-vertical"] {
+    padding: 10px 0;
+}
+.padding-vertical-5 {padding: 5px 0;}
+.padding-vertical-10 {padding: 10px 0;}
+.padding-vertical-15 {padding: 15px 0;}
+.padding-vertical-20 {padding: 20px 0;}
+
+[class*="padding-horizontal"] {
+    padding: 0 10px;
+}
+.padding-horizontal-5 {padding: 0 5px;}
+.padding-horizontal-10 {padding: 0 10px;}
+.padding-horizontal-15 {padding: 0 15px;}
+.padding-horizontal-20 {padding: 0 20px;}
 
 /* Não é usado diretamente em col, utilize em seus filhos como alternativa */
 [class*="margin"] {
@@ -820,8 +848,14 @@ h1, h2, h3, h4, h5, h6, p {
 .light-purple {color: var(--lightPurple);}
 .normal-purple {color: var(--normalPurple);}
 .dark-purple {color: var(--darkPurple);}
-.purple-gradient {
+.dark-gradient {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.light-gradient {
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -832,7 +866,8 @@ h1, h2, h3, h4, h5, h6, p {
 .bg-light-purple {background-color: var(--lightPurple);}
 .bg-normal-purple {background-color: var(--normalPurple);}
 .bg-dark-purple {background-color: var(--darkPurple);}
-.bg-purple-gradient {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
+.bg-dark-gradient {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
+.bg-light-gradient {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
 
 .fredoka-one {font-family: "FredokaOne";}
 .nunito {font-family: "Nunito";}
@@ -952,4 +987,8 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100%;
     object-fit: cover;
     filter: brightness(20%);   
+}
+
+.display-more {
+    cursor: pointer;
 }
