@@ -16,7 +16,7 @@ function windowLoaded() {
 
 function windowScrolled(e) {
     var headerSticky = document.getElementById("header-sticky");
-    var postWelcome = document.getElementById("sobre");
+    var postWelcome = document.getElementById("begin-lift");
     var classes = headerSticky.classList;
     for (var j = 0; j < classes.length; j++) {
         if (classes[j] == "lift-4") {
