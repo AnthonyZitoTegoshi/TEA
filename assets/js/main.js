@@ -71,6 +71,12 @@ function windowResized() {
         markers[i].style.position = "absolute";
         markers[i].style.transform = "translateY(-" + height + "px)";
     }
+
+    // Ajusta todos os elementos que devem ser quadrados
+    var squares = document.getElementsByClassName("height-to-width");
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.height = squares[i].getBoundingClientRect().width + "px";
+    }
 }
 
 // Seta quando chamar a função de resize
