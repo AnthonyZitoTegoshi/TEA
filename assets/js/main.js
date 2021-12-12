@@ -139,6 +139,8 @@ window.addEventListener("mousedown", dropdownToggle);
 window.addEventListener("mouseup", dropdownToggle);
 window.addEventListener("touchstart", dropdownToggle);
 window.addEventListener("touchend", dropdownToggle);
+window.addEventListener("touchmove", dropdownToggle);
+window.addEventListener("touchcancel", dropdownToggle);
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
