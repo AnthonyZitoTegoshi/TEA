@@ -130,10 +130,7 @@ window.addEventListener("resize", windowResized);
 window.addEventListener("scroll", windowScrolled);
 
 // Listen que verifica os cliques do usuário para abrir ou fechar dropdowns
-//window.addEventListener("mousedown",dropdownToggle);
 window.addEventListener("click",dropdownToggle);
-/*window.addEventListener("mousedown",dropdownToggle);
-window.addEventListener("mouseup",dropdownToggle);*/
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
 //window.addEventListener("mouseover", dropdownToggle);
