@@ -79,16 +79,6 @@ function windowResized() {
     }
 }
 
-// Seta quando chamar a função de resize
-window.addEventListener("resize", windowResized);
-
-// Seta quando chamar a função de scroll
-window.addEventListener("scroll", windowScrolled);
-
-// Chama a função uma vez quando estiver carregada a página
-window.addEventListener("load", windowResized);
-window.addEventListener("load", windowLoaded);
-
 // Função que verifica com qual dropdown o usuário interagiu
 function dropdownToggle(e) {
     // Verifica qual foi o dropdown clicado
@@ -133,36 +123,20 @@ function dropdownToggle(e) {
     }
 }
 
+// Seta quando chamar a função de resize
+window.addEventListener("resize", windowResized);
+
+// Seta quando chamar a função de scroll
+window.addEventListener("scroll", windowScrolled);
+
 // Listen que verifica os cliques do usuário para abrir ou fechar dropdowns
 window.addEventListener("click", dropdownToggle);
-window.addEventListener("mousedown", dropdownToggle);
-window.addEventListener("mouseup", dropdownToggle);
-window.addEventListener("touchstart", dropdownToggle);
-window.addEventListener("touchend", dropdownToggle);
-window.addEventListener("touchmove", dropdownToggle);
-window.addEventListener("touchcancel", dropdownToggle);
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
 
-//jquery activation
-
-/*var img_array = [
-    'assets/img/slideImg/1.jpg',
-    'assets/img/slideImg/2.jpg',
-    'assets/img/slideImg/3.jpg',
-    'assets/img/slideImg/4.jpg'
-];
-
-var pickup = $('.slide');
-
-var sli = 0;
-setInterval(function () {
-    sli = (++sli > img_array.length - 1) ? 0 : sli;
-    
-    pickup.fadeOut(2000, () => {
-        pickup.attr('src', img_array[sli]);
-        pickup.fadeIn(2000);
-    });
-}, 4000);
-*/
+// Chama a função uma vez quando estiver carregada a página
+windowResized;
+windowLoaded;
+//window.addEventListener("load", windowResized);
+//window.addEventListener("load", windowLoaded);
