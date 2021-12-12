@@ -45,10 +45,10 @@ function windowResized() {
         lastChild.style.display = "none";
 
         // Conta o tamanho do primeiro filho e dos seus itens
-        var maxWidth = firstChild.clientWidth;
+        var maxWidth = firstChild.getBoundingClientRect().width;
         var itemsWidth = 0;
         for (var j = 0; j < items.length; j++) {
-            itemsWidth += items[j].clientWidth;
+            itemsWidth += items[j].getBoundingClientRect().width;
         }
 
         alert("itemsWidth: " + itemsWidth + " e maxWidth: " + maxWidth);
