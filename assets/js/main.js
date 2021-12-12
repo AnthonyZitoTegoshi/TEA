@@ -90,7 +90,7 @@ window.addEventListener("load", windowResized);
 window.addEventListener("load", windowLoaded);
 
 // Função que verifica com qual dropdown o usuário interagiu
-function dropdownToggle(e) {
+function dropdownToggle(e) {alert("acionado");
     // Verifica qual foi o dropdown clicado
     var dropdowns = document.getElementsByClassName("dropdown-menu");
     for (var i = 0; i < dropdowns.length; i++) {
