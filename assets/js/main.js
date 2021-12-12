@@ -135,7 +135,10 @@ function dropdownToggle(e) {
 
 // Listen que verifica os cliques do usuário para abrir ou fechar dropdowns
 window.addEventListener("click", dropdownToggle);
+window.addEventListener("mousedown", dropdownToggle);
+window.addEventListener("mouseup", dropdownToggle);
 window.addEventListener("touchstart", dropdownToggle);
+window.addEventListener("touchend", dropdownToggle);
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
