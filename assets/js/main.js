@@ -52,7 +52,7 @@ function windowResized() {
         }
 
         // Caso os filhos não caibam na navbar, seta para o modo contraído
-        if (itemsWidth >= maxWidth) {
+        if (itemsWidth.toFixed(2) >= maxWidth.toFixed(2)) {
             firstChild.style.display = "none";
             lastChild.style.display = "block";
         }
