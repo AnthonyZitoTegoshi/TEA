@@ -134,58 +134,6 @@ p {
     .col-10-xs {width: 83.3333%; display: block;}
     .col-11-xs {width: 91.6666%; display: block;}
     .col-12-xs {width: 100%; display: block;}
-
-    .max-width-1-xs {max-width: 8.3333%;}
-    .max-width-2-xs {max-width: 16.6666%;}
-    .max-width-3-xs {max-width: 25%;}
-    .max-width-4-xs {max-width: 33.3333%;}
-    .max-width-5-xs {max-width: 41.6666%;}
-    .max-width-6-xs {max-width: 50%;}
-    .max-width-7-xs {max-width: 58.3333%;}
-    .max-width-8-xs {max-width: 66.6666%;}
-    .max-width-9-xs {max-width: 75%;}
-    .max-width-10-xs {max-width: 83.3333%;}
-    .max-width-11-xs {max-width: 91.6666%;}
-    .max-width-12-xs {max-width: 100%;}
-
-    .max-height-1-xs {max-height: 8.3333%;}
-    .max-height-2-xs {max-height: 16.6666%;}
-    .max-height-3-xs {max-height: 25%;}
-    .max-height-4-xs {max-height: 33.3333%;}
-    .max-height-5-xs {max-height: 41.6666%;}
-    .max-height-6-xs {max-height: 50%;}
-    .max-height-7-xs {max-height: 58.3333%;}
-    .max-height-8-xs {max-height: 66.6666%;}
-    .max-height-9-xs {max-height: 75%;}
-    .max-height-10-xs {max-height: 83.3333%;}
-    .max-height-11-xs {max-height: 91.6666%;}
-    .max-height-12-xs {max-height: 100%;}
-
-    .min-width-1-xs {min-width: 8.3333%;}
-    .min-width-2-xs {min-width: 16.6666%;}
-    .min-width-3-xs {min-width: 25%;}
-    .min-width-4-xs {min-width: 33.3333%;}
-    .min-width-5-xs {min-width: 41.6666%;}
-    .min-width-6-xs {min-width: 50%;}
-    .min-width-7-xs {min-width: 58.3333%;}
-    .min-width-8-xs {min-width: 66.6666%;}
-    .min-width-9-xs {min-width: 75%;}
-    .min-width-10-xs {min-width: 83.3333%;}
-    .min-width-11-xs {min-width: 91.6666%;}
-    .min-width-12-xs {min-width: 100%;}
-
-    .min-height-1-xs {min-height: 8.3333%;}
-    .min-height-2-xs {min-height: 16.6666%;}
-    .min-height-3-xs {min-height: 25%;}
-    .min-height-4-xs {min-height: 33.3333%;}
-    .min-height-5-xs {min-height: 41.6666%;}
-    .min-height-6-xs {min-height: 50%;}
-    .min-height-7-xs {min-height: 58.3333%;}
-    .min-height-8-xs {min-height: 66.6666%;}
-    .min-height-9-xs {min-height: 75%;}
-    .min-height-10-xs {min-height: 83.3333%;}
-    .min-height-11-xs {min-height: 91.6666%;}
-    .min-height-12-xs {min-height: 100%;}
 }
 
 /* Para os sm */
@@ -221,58 +169,6 @@ p {
     .col-10-sm {width: 83.3333%; display: block;}
     .col-11-sm {width: 91.6666%; display: block;}
     .col-12-sm {width: 100%; display: block;}
-
-    .max-width-1-sm {max-width: 8.3333%;}
-    .max-width-2-sm {max-width: 16.6666%;}
-    .max-width-3-sm {max-width: 25%;}
-    .max-width-4-sm {max-width: 33.3333%;}
-    .max-width-5-sm {max-width: 41.6666%;}
-    .max-width-6-sm {max-width: 50%;}
-    .max-width-7-sm {max-width: 58.3333%;}
-    .max-width-8-sm {max-width: 66.6666%;}
-    .max-width-9-sm {max-width: 75%;}
-    .max-width-10-sm {max-width: 83.3333%;}
-    .max-width-11-sm {max-width: 91.6666%;}
-    .max-width-12-sm {max-width: 100%;}
-
-    .max-height-1-sm {max-height: 8.3333%;}
-    .max-height-2-sm {max-height: 16.6666%;}
-    .max-height-3-sm {max-height: 25%;}
-    .max-height-4-sm {max-height: 33.3333%;}
-    .max-height-5-sm {max-height: 41.6666%;}
-    .max-height-6-sm {max-height: 50%;}
-    .max-height-7-sm {max-height: 58.3333%;}
-    .max-height-8-sm {max-height: 66.6666%;}
-    .max-height-9-sm {max-height: 75%;}
-    .max-height-10-sm {max-height: 83.3333%;}
-    .max-height-11-sm {max-height: 91.6666%;}
-    .max-height-12-sm {max-height: 100%;}
-
-    .min-width-1-sm {min-width: 8.3333%;}
-    .min-width-2-sm {min-width: 16.6666%;}
-    .min-width-3-sm {min-width: 25%;}
-    .min-width-4-sm {min-width: 33.3333%;}
-    .min-width-5-sm {min-width: 41.6666%;}
-    .min-width-6-sm {min-width: 50%;}
-    .min-width-7-sm {min-width: 58.3333%;}
-    .min-width-8-sm {min-width: 66.6666%;}
-    .min-width-9-sm {min-width: 75%;}
-    .min-width-10-sm {min-width: 83.3333%;}
-    .min-width-11-sm {min-width: 91.6666%;}
-    .min-width-12-sm {min-width: 100%;}
-
-    .min-height-1-sm {min-height: 8.3333%;}
-    .min-height-2-sm {min-height: 16.6666%;}
-    .min-height-3-sm {min-height: 25%;}
-    .min-height-4-sm {min-height: 33.3333%;}
-    .min-height-5-sm {min-height: 41.6666%;}
-    .min-height-6-sm {min-height: 50%;}
-    .min-height-7-sm {min-height: 58.3333%;}
-    .min-height-8-sm {min-height: 66.6666%;}
-    .min-height-9-sm {min-height: 75%;}
-    .min-height-10-sm {min-height: 83.3333%;}
-    .min-height-11-sm {min-height: 91.6666%;}
-    .min-height-12-sm {min-height: 100%;}
 }
 
 /* Para os md */
@@ -308,58 +204,6 @@ p {
     .col-10-md {width: 83.3333%; display: block;}
     .col-11-md {width: 91.6666%; display: block;}
     .col-12-md {width: 100%; display: block;}
-
-    .max-width-1-md {max-width: 8.3333%;}
-    .max-width-2-md {max-width: 16.6666%;}
-    .max-width-3-md {max-width: 25%;}
-    .max-width-4-md {max-width: 33.3333%;}
-    .max-width-5-md {max-width: 41.6666%;}
-    .max-width-6-md {max-width: 50%;}
-    .max-width-7-md {max-width: 58.3333%;}
-    .max-width-8-md {max-width: 66.6666%;}
-    .max-width-9-md {max-width: 75%;}
-    .max-width-10-md {max-width: 83.3333%;}
-    .max-width-11-md {max-width: 91.6666%;}
-    .max-width-12-md {max-width: 100%;}
-
-    .max-height-1-md {max-height: 8.3333%;}
-    .max-height-2-md {max-height: 16.6666%;}
-    .max-height-3-md {max-height: 25%;}
-    .max-height-4-md {max-height: 33.3333%;}
-    .max-height-5-md {max-height: 41.6666%;}
-    .max-height-6-md {max-height: 50%;}
-    .max-height-7-md {max-height: 58.3333%;}
-    .max-height-8-md {max-height: 66.6666%;}
-    .max-height-9-md {max-height: 75%;}
-    .max-height-10-md {max-height: 83.3333%;}
-    .max-height-11-md {max-height: 91.6666%;}
-    .max-height-12-md {max-height: 100%;}
-
-    .min-width-1-md {min-width: 8.3333%;}
-    .min-width-2-md {min-width: 16.6666%;}
-    .min-width-3-md {min-width: 25%;}
-    .min-width-4-md {min-width: 33.3333%;}
-    .min-width-5-md {min-width: 41.6666%;}
-    .min-width-6-md {min-width: 50%;}
-    .min-width-7-md {min-width: 58.3333%;}
-    .min-width-8-md {min-width: 66.6666%;}
-    .min-width-9-md {min-width: 75%;}
-    .min-width-10-md {min-width: 83.3333%;}
-    .min-width-11-md {min-width: 91.6666%;}
-    .min-width-12-md {min-width: 100%;}
-
-    .min-height-1-md {min-height: 8.3333%;}
-    .min-height-2-md {min-height: 16.6666%;}
-    .min-height-3-md {min-height: 25%;}
-    .min-height-4-md {min-height: 33.3333%;}
-    .min-height-5-md {min-height: 41.6666%;}
-    .min-height-6-md {min-height: 50%;}
-    .min-height-7-md {min-height: 58.3333%;}
-    .min-height-8-md {min-height: 66.6666%;}
-    .min-height-9-md {min-height: 75%;}
-    .min-height-10-md {min-height: 83.3333%;}
-    .min-height-11-md {min-height: 91.6666%;}
-    .min-height-12-md {min-height: 100%;}
 }
 
 /* Para os lg */
@@ -395,58 +239,6 @@ p {
     .col-10-lg {width: 83.3333%; display: block;}
     .col-11-lg {width: 91.6666%; display: block;}
     .col-12-lg {width: 100%; display: block;}
-
-    .max-width-1-lg {max-width: 8.3333%;}
-    .max-width-2-lg {max-width: 16.6666%;}
-    .max-width-3-lg {max-width: 25%;}
-    .max-width-4-lg {max-width: 33.3333%;}
-    .max-width-5-lg {max-width: 41.6666%;}
-    .max-width-6-lg {max-width: 50%;}
-    .max-width-7-lg {max-width: 58.3333%;}
-    .max-width-8-lg {max-width: 66.6666%;}
-    .max-width-9-lg {max-width: 75%;}
-    .max-width-10-lg {max-width: 83.3333%;}
-    .max-width-11-lg {max-width: 91.6666%;}
-    .max-width-12-lg {max-width: 100%;}
-
-    .max-height-1-lg {max-height: 8.3333%;}
-    .max-height-2-lg {max-height: 16.6666%;}
-    .max-height-3-lg {max-height: 25%;}
-    .max-height-4-lg {max-height: 33.3333%;}
-    .max-height-5-lg {max-height: 41.6666%;}
-    .max-height-6-lg {max-height: 50%;}
-    .max-height-7-lg {max-height: 58.3333%;}
-    .max-height-8-lg {max-height: 66.6666%;}
-    .max-height-9-lg {max-height: 75%;}
-    .max-height-10-lg {max-height: 83.3333%;}
-    .max-height-11-lg {max-height: 91.6666%;}
-    .max-height-12-lg {max-height: 100%;}
-
-    .min-width-1-lg {min-width: 8.3333%;}
-    .min-width-2-lg {min-width: 16.6666%;}
-    .min-width-3-lg {min-width: 25%;}
-    .min-width-4-lg {min-width: 33.3333%;}
-    .min-width-5-lg {min-width: 41.6666%;}
-    .min-width-6-lg {min-width: 50%;}
-    .min-width-7-lg {min-width: 58.3333%;}
-    .min-width-8-lg {min-width: 66.6666%;}
-    .min-width-9-lg {min-width: 75%;}
-    .min-width-10-lg {min-width: 83.3333%;}
-    .min-width-11-lg {min-width: 91.6666%;}
-    .min-width-12-lg {min-width: 100%;}
-
-    .min-height-1-lg {min-height: 8.3333%;}
-    .min-height-2-lg {min-height: 16.6666%;}
-    .min-height-3-lg {min-height: 25%;}
-    .min-height-4-lg {min-height: 33.3333%;}
-    .min-height-5-lg {min-height: 41.6666%;}
-    .min-height-6-lg {min-height: 50%;}
-    .min-height-7-lg {min-height: 58.3333%;}
-    .min-height-8-lg {min-height: 66.6666%;}
-    .min-height-9-lg {min-height: 75%;}
-    .min-height-10-lg {min-height: 83.3333%;}
-    .min-height-11-lg {min-height: 91.6666%;}
-    .min-height-12-lg {min-height: 100%;}
 }
 
 /* Para os xl */
@@ -482,58 +274,6 @@ p {
     .col-10-xl {width: 83.3333%; display: block;}
     .col-11-xl {width: 91.6666%; display: block;}
     .col-12-xl {width: 100%; display: block;}
-
-    .max-width-1-xl {max-width: 8.3333%;}
-    .max-width-2-xl {max-width: 16.6666%;}
-    .max-width-3-xl {max-width: 25%;}
-    .max-width-4-xl {max-width: 33.3333%;}
-    .max-width-5-xl {max-width: 41.6666%;}
-    .max-width-6-xl {max-width: 50%;}
-    .max-width-7-xl {max-width: 58.3333%;}
-    .max-width-8-xl {max-width: 66.6666%;}
-    .max-width-9-xl {max-width: 75%;}
-    .max-width-10-xl {max-width: 83.3333%;}
-    .max-width-11-xl {max-width: 91.6666%;}
-    .max-width-12-xl {max-width: 100%;}
-
-    .max-height-1-xl {max-height: 8.3333%;}
-    .max-height-2-xl {max-height: 16.6666%;}
-    .max-height-3-xl {max-height: 25%;}
-    .max-height-4-xl {max-height: 33.3333%;}
-    .max-height-5-xl {max-height: 41.6666%;}
-    .max-height-6-xl {max-height: 50%;}
-    .max-height-7-xl {max-height: 58.3333%;}
-    .max-height-8-xl {max-height: 66.6666%;}
-    .max-height-9-xl {max-height: 75%;}
-    .max-height-10-xl {max-height: 83.3333%;}
-    .max-height-11-xl {max-height: 91.6666%;}
-    .max-height-12-xl {max-height: 100%;}
-
-    .min-width-1-xl {min-width: 8.3333%;}
-    .min-width-2-xl {min-width: 16.6666%;}
-    .min-width-3-xl {min-width: 25%;}
-    .min-width-4-xl {min-width: 33.3333%;}
-    .min-width-5-xl {min-width: 41.6666%;}
-    .min-width-6-xl {min-width: 50%;}
-    .min-width-7-xl {min-width: 58.3333%;}
-    .min-width-8-xl {min-width: 66.6666%;}
-    .min-width-9-xl {min-width: 75%;}
-    .min-width-10-xl {min-width: 83.3333%;}
-    .min-width-11-xl {min-width: 91.6666%;}
-    .min-width-12-xl {min-width: 100%;}
-
-    .min-height-1-xl {min-height: 8.3333%;}
-    .min-height-2-xl {min-height: 16.6666%;}
-    .min-height-3-xl {min-height: 25%;}
-    .min-height-4-xl {min-height: 33.3333%;}
-    .min-height-5-xl {min-height: 41.6666%;}
-    .min-height-6-xl {min-height: 50%;}
-    .min-height-7-xl {min-height: 58.3333%;}
-    .min-height-8-xl {min-height: 66.6666%;}
-    .min-height-9-xl {min-height: 75%;}
-    .min-height-10-xl {min-height: 83.3333%;}
-    .min-height-11-xl {min-height: 91.6666%;}
-    .min-height-12-xl {min-height: 100%;}
 }
 
 /* Para os xx */
@@ -569,58 +309,6 @@ p {
     .col-10-xx {width: 83.3333%; display: block;}
     .col-11-xx {width: 91.6666%; display: block;}
     .col-12-xx {width: 100%; display: block;}
-
-    .max-width-1-xx {max-width: 8.3333%;}
-    .max-width-2-xx {max-width: 16.6666%;}
-    .max-width-3-xx {max-width: 25%;}
-    .max-width-4-xx {max-width: 33.3333%;}
-    .max-width-5-xx {max-width: 41.6666%;}
-    .max-width-6-xx {max-width: 50%;}
-    .max-width-7-xx {max-width: 58.3333%;}
-    .max-width-8-xx {max-width: 66.6666%;}
-    .max-width-9-xx {max-width: 75%;}
-    .max-width-10-xx {max-width: 83.3333%;}
-    .max-width-11-xx {max-width: 91.6666%;}
-    .max-width-12-xx {max-width: 100%;}
-
-    .max-height-1-xx {max-height: 8.3333%;}
-    .max-height-2-xx {max-height: 16.6666%;}
-    .max-height-3-xx {max-height: 25%;}
-    .max-height-4-xx {max-height: 33.3333%;}
-    .max-height-5-xx {max-height: 41.6666%;}
-    .max-height-6-xx {max-height: 50%;}
-    .max-height-7-xx {max-height: 58.3333%;}
-    .max-height-8-xx {max-height: 66.6666%;}
-    .max-height-9-xx {max-height: 75%;}
-    .max-height-10-xx {max-height: 83.3333%;}
-    .max-height-11-xx {max-height: 91.6666%;}
-    .max-height-12-xx {max-height: 100%;}
-
-    .min-width-1-xx {min-width: 8.3333%;}
-    .min-width-2-xx {min-width: 16.6666%;}
-    .min-width-3-xx {min-width: 25%;}
-    .min-width-4-xx {min-width: 33.3333%;}
-    .min-width-5-xx {min-width: 41.6666%;}
-    .min-width-6-xx {min-width: 50%;}
-    .min-width-7-xx {min-width: 58.3333%;}
-    .min-width-8-xx {min-width: 66.6666%;}
-    .min-width-9-xx {min-width: 75%;}
-    .min-width-10-xx {min-width: 83.3333%;}
-    .min-width-11-xx {min-width: 91.6666%;}
-    .min-width-12-xx {min-width: 100%;}
-
-    .min-height-1-xx {min-height: 8.3333%;}
-    .min-height-2-xx {min-height: 16.6666%;}
-    .min-height-3-xx {min-height: 25%;}
-    .min-height-4-xx {min-height: 33.3333%;}
-    .min-height-5-xx {min-height: 41.6666%;}
-    .min-height-6-xx {min-height: 50%;}
-    .min-height-7-xx {min-height: 58.3333%;}
-    .min-height-8-xx {min-height: 66.6666%;}
-    .min-height-9-xx {min-height: 75%;}
-    .min-height-10-xx {min-height: 83.3333%;}
-    .min-height-11-xx {min-height: 91.6666%;}
-    .min-height-12-xx {min-height: 100%;}
 }
 
 .max-width-500 {max-width: 500px;}
@@ -659,10 +347,16 @@ p {
     border: 0px solid transparent;
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
 }
-[class*="border"]:not([class*="padding"]) {padding: 1px;}
-.border-2:not([class*="padding"]) {padding: 2px;}
-.border-3:not([class*="padding"]) {padding: 3px;}
-.border-4:not([class*="padding"]) {padding: 4px;}
+.border-1 {border-width: 1px;}
+.border-2 {border-width: 2px;}
+.border-3 {border-width: 3px;}
+.border-4 {border-width: 4px;}
+.border-5 {border-width: 5px;}
+.border-6 {border-width: 6px;}
+.border-7 {border-width: 7px;}
+.border-8 {border-width: 8px;}
+.border-9 {border-width: 9px;}
+.border-10 {border-width: 10px;}
 
 [class*="offset"] {
     position: relative;
@@ -750,6 +444,38 @@ p {
 .height-4 {height: 4rem;}
 .height-5 {height: 5rem;}
 .height-6 {height: 6rem;}
+.height-7 {height: 7rem;}
+.height-8 {height: 8rem;}
+.height-9 {height: 9rem;}
+.height-10 {height: 10rem;}
+
+.max-height-xs {max-height: 0.5rem;}
+.max-height-sm {max-height: 1rem;}
+.max-height-md {max-height: 1.5rem;}
+.max-height-lg {max-height: 2rem;}
+.max-height-xl {max-height: 2.5rem;}
+.max-height-xx {max-height: 3rem;}
+.max-height-4 {max-height: 4rem;}
+.max-height-5 {max-height: 5rem;}
+.max-height-6 {max-height: 6rem;}
+.max-height-7 {max-height: 7rem;}
+.max-height-8 {max-height: 8rem;}
+.max-height-9 {max-height: 9rem;}
+.max-height-10 {max-height: 10rem;}
+
+.min-height-xs {min-height: 0.5rem;}
+.min-height-sm {min-height: 1rem;}
+.min-height-md {min-height: 1.5rem;}
+.min-height-lg {min-height: 2rem;}
+.min-height-xl {min-height: 2.5rem;}
+.min-height-xx {min-height: 3rem;}
+.min-height-4 {min-height: 4rem;}
+.min-height-5 {min-height: 5rem;}
+.min-height-6 {min-height: 6rem;}
+.min-height-7 {min-height: 7rem;}
+.min-height-8 {min-height: 8rem;}
+.min-height-9 {min-height: 9rem;}
+.min-height-10 {min-height: 10rem;}
 
 .width-xs {width: 0.5rem;}
 .width-sm {width: 1rem;}
@@ -760,6 +486,38 @@ p {
 .width-4 {width: 4rem;}
 .width-5 {width: 5rem;}
 .width-6 {width: 6rem;}
+.width-7 {width: 7rem;}
+.width-8 {width: 8rem;}
+.width-9 {width: 9rem;}
+.width-10 {width: 10rem;}
+
+.max-width-xs {max-width: 0.5rem;}
+.max-width-sm {max-width: 1rem;}
+.max-width-md {max-width: 1.5rem;}
+.max-width-lg {max-width: 2rem;}
+.max-width-xl {max-width: 2.5rem;}
+.max-width-xx {max-width: 3rem;}
+.max-width-4 {max-width: 4rem;}
+.max-width-5 {max-width: 5rem;}
+.max-width-6 {max-width: 6rem;}
+.max-width-7 {max-width: 7rem;}
+.max-width-8 {max-width: 8rem;}
+.max-width-9 {max-width: 9rem;}
+.max-width-10 {max-width: 10rem;}
+
+.min-width-xs {min-width: 0.5rem;}
+.min-width-sm {min-width: 1rem;}
+.min-width-md {min-width: 1.5rem;}
+.min-width-lg {min-width: 2rem;}
+.min-width-xl {min-width: 2.5rem;}
+.min-width-xx {min-width: 3rem;}
+.min-width-4 {min-width: 4rem;}
+.min-width-5 {min-width: 5rem;}
+.min-width-6 {min-width: 6rem;}
+.min-width-7 {min-width: 7rem;}
+.min-width-8 {min-width: 8rem;}
+.min-width-9 {min-width: 9rem;}
+.min-width-10 {min-width: 10rem;}
 
 .rounded {
     border-radius: 99999px;
@@ -776,58 +534,6 @@ p {
 
 .width-content {width: max-content;}
 .height-content {height: max-content;}
-
-.max-width-1 {max-width: 8.3333%;}
-.max-width-2 {max-width: 16.6666%;}
-.max-width-3 {max-width: 25%;}
-.max-width-4 {max-width: 33.3333%;}
-.max-width-5 {max-width: 41.6666%;}
-.max-width-6 {max-width: 50%;}
-.max-width-7 {max-width: 58.3333%;}
-.max-width-8 {max-width: 66.6666%;}
-.max-width-9 {max-width: 75%;}
-.max-width-10 {max-width: 83.3333%;}
-.max-width-11 {max-width: 91.6666%;}
-.max-width-12 {max-width: 100%;}
-
-.max-height-1 {max-height: 8.3333%;}
-.max-height-2 {max-height: 16.6666%;}
-.max-height-3 {max-height: 25%;}
-.max-height-4 {max-height: 33.3333%;}
-.max-height-5 {max-height: 41.6666%;}
-.max-height-6 {max-height: 50%;}
-.max-height-7 {max-height: 58.3333%;}
-.max-height-8 {max-height: 66.6666%;}
-.max-height-9 {max-height: 75%;}
-.max-height-10 {max-height: 83.3333%;}
-.max-height-11 {max-height: 91.6666%;}
-.max-height-12 {max-height: 100%;}
-
-.min-width-1 {min-width: 8.3333%;}
-.min-width-2 {min-width: 16.6666%;}
-.min-width-3 {min-width: 25%;}
-.min-width-4 {min-width: 33.3333%;}
-.min-width-5 {min-width: 41.6666%;}
-.min-width-6 {min-width: 50%;}
-.min-width-7 {min-width: 58.3333%;}
-.min-width-8 {min-width: 66.6666%;}
-.min-width-9 {min-width: 75%;}
-.min-width-10 {min-width: 83.3333%;}
-.min-width-11 {min-width: 91.6666%;}
-.min-width-12 {min-width: 100%;}
-
-.min-height-1 {min-height: 8.3333%;}
-.min-height-2 {min-height: 16.6666%;}
-.min-height-3 {min-height: 25%;}
-.min-height-4 {min-height: 33.3333%;}
-.min-height-5 {min-height: 41.6666%;}
-.min-height-6 {min-height: 50%;}
-.min-height-7 {min-height: 58.3333%;}
-.min-height-8 {min-height: 66.6666%;}
-.min-height-9 {min-height: 75%;}
-.min-height-10 {min-height: 83.3333%;}
-.min-height-11 {min-height: 91.6666%;}
-.min-height-12 {min-height: 100%;}
 
 .display-none {display: none;}
 .display-block {display: block;}

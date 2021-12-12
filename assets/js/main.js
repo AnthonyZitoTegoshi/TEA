@@ -71,6 +71,12 @@ function windowResized() {
         markers[i].style.position = "absolute";
         markers[i].style.transform = "translateY(-" + height + "px)";
     }
+
+    // Ajusta todos os elementos que devem ser quadrados
+    var squares = document.getElementsByClassName("height-to-width");
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.height = squares[i].getBoundingClientRect().width + "px";
+    }
 }
 
 // Seta quando chamar a função de resize
@@ -129,6 +135,12 @@ function dropdownToggle(e) {
 
 // Listen que verifica os cliques do usuário para abrir ou fechar dropdowns
 window.addEventListener("click", dropdownToggle);
+window.addEventListener("mousedown", dropdownToggle);
+window.addEventListener("mouseup", dropdownToggle);
+window.addEventListener("touchstart", dropdownToggle);
+window.addEventListener("touchend", dropdownToggle);
+window.addEventListener("touchmove", dropdownToggle);
+window.addEventListener("touchcancel", dropdownToggle);
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
 window.addEventListener("mouseover", dropdownToggle);
