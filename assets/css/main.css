@@ -622,6 +622,11 @@ p {
 .dropdown-menu {
     position: relative;
     display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu > *:not(a) {
+    cursor: default;
 }
 
 [class*="dropdown-items"] {
