@@ -51,8 +51,10 @@ function windowResized() {
             itemsWidth += items[j].clientWidth;
         }
 
+        alert("itemsWidth: " + itemsWidth + " e maxWidth: " + maxWidth);
+
         // Caso os filhos não caibam na navbar, seta para o modo contraído
-        if (itemsWidth.toFixed(2) >= maxWidth.toFixed(2)) {
+        if (itemsWidth.toFixed(0) >= maxWidth.toFixed(0)) {
             firstChild.style.display = "none";
             lastChild.style.display = "block";
         }
