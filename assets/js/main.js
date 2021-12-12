@@ -97,7 +97,7 @@ function dropdownToggle(e) {
         var itemsRect = items.getBoundingClientRect();
 
         // Verifica se o mouse está ou não sobre o dropdown para mostrar ou não o filho
-        if ((dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY) && itemsCS.display == "none") {
+        if ((dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY) && itemsCS.display == "none") {alert("asd");
             // Ativa o filho para pegar os seus valores quando está visível
             items.style.display = "block";
 
