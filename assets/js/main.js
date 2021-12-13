@@ -116,10 +116,10 @@ function dropdownToggle(e) {
             }
         } else {
             // Contrai o dropdown que não foi acionado
-            setTimeout(() => {
+            /*setTimeout(() => {
                 items.removeAttribute("style");
                 items.style.display = "none";
-            }, 100);
+            }, 100);*/
         }
     }
 }
