@@ -60,6 +60,8 @@ h1, h2, h3, h4, h5, h6, p {
     overflow-inline: auto;
 }
 
+.overflow {overflow: auto;}
+
 /*p {
     text-indent: 2rem;
 }*/
@@ -101,6 +103,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
 }
 .fit-child {width: max-content; height: max-content;}
+.max-child {width: 100%; height: auto; max-width: max-content; max-height: max-content;}
 
 .order-1 {order: 1;}
 .order-2 {order: 2;}

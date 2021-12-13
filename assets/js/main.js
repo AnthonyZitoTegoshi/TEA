@@ -80,6 +80,63 @@ function windowResized() {
     for (var i = 0; i < squares.length; i++) {
         squares[i].style.height = squares[i].getBoundingClientRect().width + "px";
     }
+
+    // Ajusta as rows que mudam conforme o wrap delas
+    var wrapper = document.getElementsByClassName("onwrap-row-center");
+    for (var i = 0; i < wrapper.length; i++) {
+        // Pega os elementos filhos do wrapper
+        var children = wrapper[i].children;
+
+        // Calcula a altura do pai e dos filhos
+        var rowHeight = wrapper[i].getBoundingClientRect().height;
+        var childrenHeight = 0;
+        for (var j = 0; j < children.length; j++) {
+            childrenHeight += children[j].getBoundingClientRect().height;
+        }
+
+        // Compara a altura dos dois para saber se está onwrap ou não
+        var isWrapped = childrenHeight <= rowHeight;
+
+        // Remove qualquer estilo de antes
+        wrapper[i].removeAttribute("style");
+
+        // Se estiver onwrap, atua
+        if (isWrapped) {
+            wrapper[i].style.justifyContent = "center";
+        }
+    }
+
+    // Ajusta as rows que mudam conforme o wrap delas
+    var wrapper = document.getElementsByClassName("onwrap-text-center");
+    for (var i = 0; i < wrapper.length; i++) {
+        // Pega os elementos filhos do wrapper
+        var children = wrapper[i].children;
+
+        // Pega os elementos afetados pelo wrap
+        var affected = wrapper[i].getElementsByClassName("onwrap-affected");
+
+        // Calcula a altura do pai e dos filhos
+        var rowHeight = wrapper[i].getBoundingClientRect().height;
+        var childrenHeight = 0;
+        for (var j = 0; j < children.length; j++) {
+            childrenHeight += children[j].getBoundingClientRect().height;
+        }
+
+        // Compara a altura dos dois para saber se está onwrap ou não
+        var isWrapped = childrenHeight <= rowHeight;
+
+        // Remove qualquer estilo do afetados de antes
+        for (var j = 0; j < affected.length; j++) {
+            affected[j].removeAttribute("style");
+        }
+
+        // Se estiver onwrap, atua
+        if (isWrapped) {
+            for (var j = 0; j < affected.length; j++) {
+                affected[j].style.textAlign = "center";
+            }
+        }
+    }
 }
 
 // Função que verifica com qual dropdown o usuário interagiu
