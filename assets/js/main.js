@@ -16,9 +16,10 @@ function windowLoaded() {
         markers[i].style.position = "absolute";
         markers[i].style.transform = "translateY(-" + height + "px)";
     }
-    
+
     // Joga a página para o topo independente de onde estiver
-    document.getElementById("go-home").click();
+    //document.getElementById("go-home").click();
+    window.scrollTo(0, 0);
 
     // Seta o tamanho mínimo das boas vindas
     var welcomeContainer = document.getElementById("welcome-container");
