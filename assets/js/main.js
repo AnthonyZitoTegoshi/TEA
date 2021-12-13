@@ -9,6 +9,9 @@ function displayText(id) {
 }
 
 function windowLoaded() {
+    // Joga a página para o topo independente de onde estiver
+    document.getElementById("go-home").click();
+
     // Seta o tamanho mínimo das boas vindas
     var welcomeContainer = document.getElementById("welcome-container");
     welcomeContainer.style.minHeight = (welcomeContainer.getElementsByClassName("rule")[0].getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2))) + "px";
