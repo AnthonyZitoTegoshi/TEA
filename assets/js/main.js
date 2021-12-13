@@ -158,6 +158,7 @@ function dropdownToggle(e) {
 
         // Verifica se o mouse está ou não sobre o dropdown para mostrar ou não o filho
         if (dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY && dropdown.width > 0 && dropdown.height > 0 && (itemsCS.display == "none" || itemsCS.display != "none" && e.type == "mouseover") || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY && itemsRect.width > 0 && itemsRect.height > 0 && e.type == "mouseover") {
+            alert(e.type);
             // Ativa o filho para pegar os seus valores quando está visível
             items.style.display = "block";
 
