@@ -116,9 +116,10 @@ function dropdownToggle(e) {
             }
         } else {
             // Contrai o dropdown que não foi acionado
-            items.style.display = "none";
-            items.style.left = "unset";
-            items.style.top = "unset";
+            setTimeout(() => {
+                items.removeAttribute("style");
+                items.style.display = "none";
+            }, 100);
         }
     }
 }
