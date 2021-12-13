@@ -9,6 +9,14 @@ function displayText(id) {
 }
 
 function windowLoaded() {
+    // Pega os markers e os faz ficarem transformados em relação ao tamanho do header
+    var markers = document.getElementsByClassName("marker");
+    var height = document.getElementById("header-sticky").getBoundingClientRect().height;
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].style.position = "absolute";
+        markers[i].style.transform = "translateY(-" + height + "px)";
+    }
+    
     // Joga a página para o topo independente de onde estiver
     document.getElementById("go-home").click();
 
