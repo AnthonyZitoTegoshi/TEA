@@ -482,7 +482,7 @@
         <div class="row-center items-end flex-nowrap">
             <div class="col-11-sm col-10-md col-9-lg col-8-xl col-7-xx">
                 <div class="row-end items-center flex-nowrap">
-                    <a class="rounded padding-5 fit-child"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col radius max-width-75 bg-dark-gradient"></a>
+                    <a class="rounded fit-child"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col radius padding-20 max-width-75 bg-dark-gradient"></a>
                 </div>
             </div>
         </div>
