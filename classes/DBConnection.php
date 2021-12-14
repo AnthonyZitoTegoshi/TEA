@@ -26,10 +26,8 @@ class DBConnection {
     public function insert() {
         $args = func_get_args();
         $numArgs = func_num_args();
-
-        for ($i = 0; $i < count($args); $i++) {
-            echo $args[$i];
-        }
+        echo implode(", ", $args);
+        $query = "insert into " . $args[0] . " values (" . ")";
     }
 
     public function close() {
