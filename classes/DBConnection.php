@@ -22,6 +22,10 @@ class DBConnection {
             )
         );
     }
+
+    public function close() {
+        $this->getConnection()->close();
+    }
     
     public function getHost() {
         return $this->host;
