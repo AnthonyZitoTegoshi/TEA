@@ -39,9 +39,18 @@ class DBConnection {
             }
         }
 
+        $valuesToString = "";
+        for ($i = 0; $i < count($values); $i++) {
+            if (gettype($values[$i]) == "string") {
+                $valuesToString .= "'" . $values[$i] . "'";
+            } else {
+                $valuesToString .= $values[$i];
+            }
+        }
+
         $query .= " (" . implode(", ", $fields) . ") values ('" . implode("', '", $values) . "')";
 
-        echo $query;
+        echo $valuesToString;
 
         //$this->getConnection()->query($query);
     }
