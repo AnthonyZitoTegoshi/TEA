@@ -100,7 +100,7 @@
     </section>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <article class="container max-width-100 padding-10 whatsapp-button">
+    <article class="container max-width-100 right bottom padding-10 whatsapp-button">
         <button class="rounded padding-5 empty-default bg-dark-gradient"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100"></button>
     </article>
 
