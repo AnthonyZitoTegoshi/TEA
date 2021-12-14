@@ -74,7 +74,7 @@
     <section class="container poppins font-size-sm">
         <div class="row-between">
             <div class="col-12-lg">
-                <img src="./assets/img/welcome/1a.webp" id="banner" class="slide">
+                <img src="./assets/img/welcome/1b.webp" id="banner" class="slide">
                 <div id="welcome-container" class="container padding-20">
                     <div class="row items-center">
                         <div class="row height-content rule">
@@ -117,7 +117,7 @@
                                         <div class="col-5-md col-9-sm order-1-xs order-2-md padding-20 max-width-400">
                                             <div class="container radius-10 bg-dark-gradient">
                                                 <picture class="col offset-right-20 offset-top-20">
-                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_firsta.webp" alt="Pessoas trabalhando em uma ideia">
+                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_firstb.webp" alt="Pessoas trabalhando em uma ideia">
                                                     <a class="img-credits" href="http://www.freepik.com" target="blank">Designed by pikisuperstar / Freepik</a>
                                                 </picture>
                                             </div>
@@ -150,7 +150,7 @@
                                         <div class="col-5-md col-9-sm padding-20 max-width-400">
                                             <div class="container radius-10 bg-dark-gradient">
                                                 <picture class="col offset-left-20 offset-top-20">
-                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_seconda.webp" alt="Relação entre o chá e a programação">
+                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_secondb.webp" alt="Relação entre o chá e a programação">
                                                     <a class="img-credits" href="http://www.freepik.com" target="blank">Designed by Freepik</a>
                                                 </picture>
                                             </div>
@@ -185,7 +185,7 @@
                                         <div class="col-5-md col-9-sm order-1-xs order-2-md padding-20 max-width-400">
                                             <div class="container radius-10 bg-dark-gradient">
                                                 <picture class="col offset-right-20 offset-top-20">
-                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_thirda.webp" alt="Amostra de paleta de cores">
+                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_thirdb.webp" alt="Amostra de paleta de cores">
                                                     <a class="img-credits" href="http://www.freepik.com" target="blank">Designed by vectorjuice / Freepik</a>
                                                 </picture>
                                             </div>
@@ -214,7 +214,7 @@
                                         <div class="col-5-md col-9-sm padding-20 max-width-400">
                                             <div class="container radius-10 bg-dark-gradient">
                                                 <picture class="col offset-left-20 offset-top-20">
-                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_fourtha.webp" alt="Pessoas no mercado de trabalho">
+                                                    <img class="img-fluid radius-10 lift" src="./assets/img/history/history_fourthb.webp" alt="Pessoas no mercado de trabalho">
                                                     <a class="img-credits" href="http://www.freepik.com" target="blank">Designed by pikisuperstar / Freepik</a>
                                                 </picture>
                                             </div>
@@ -370,7 +370,7 @@
                                                         <div class="col">
                                                             <div class="row-between flex-nowrap-sm onwrap-row-center items-center">
                                                                 <div class="col max-child padding-5">
-                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/page_infoa.webp" alt="Imagem Página de Divulgação" >
+                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/page_infob.webp" alt="Imagem Página de Divulgação" >
                                                                 </div>
                                                                 <p class="col text-left line-md padding-5">Criamos um domínio que pode <span class="dark-gradient font-weight-bolder">divulgar</span> sua empresa/trabalho com até <span class="dark-gradient font-weight-bolder">três páginas</span>. Você terá direito de <span class="dark-gradient font-weight-bolder">modificar</span> tudo o que quiser e dar a nós o molde de como gostaria de dispor suas <span class="dark-gradient font-weight-bolder">informações</span>, <span class="dark-gradient font-weight-bolder">anúncios</span> e <span class="dark-gradient font-weight-bolder">etc</span>.</p>
                                                             </div>
@@ -389,7 +389,7 @@
                                                         <div class="col">
                                                             <div class="row-between flex-nowrap-sm onwrap-row-center items-center">
                                                                 <div class="col max-child padding-5">
-                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/htmlcssa.webp" alt="Imagem Página All in One" >
+                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/htmlcssb.webp" alt="Imagem Página All in One" >
                                                                 </div>
                                                                 <p class="col text-left line-md padding-5">Criaremos um <span class="dark-gradient font-weight-bolder">domínio</span> onde você poderá colocar todas e quaisquer <span class="dark-gradient font-weight-bolder">informações</span> que quiser sobre o conteúdo que deseja, sendo ele, uma <span class="dark-gradient font-weight-bolder">empresa</span>, um <span class="dark-gradient font-weight-bolder">blog pessoal</span>, um <span class="dark-gradient font-weight-bolder">anúncio</span>, o que a sua imaginação permitir, desde que seja possível.</p>
                                                             </div>
@@ -408,7 +408,7 @@
                                                         <div class="col">
                                                             <div class="row-between flex-nowrap-sm onwrap-row-center items-center">
                                                                 <div class="col max-child padding-5">
-                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/logina.webp" alt="Imagem Página de Login" >
+                                                                    <img class="img-fluid col max-width-200" src="./assets/img/products/loginb.webp" alt="Imagem Página de Login" >
                                                                 </div>
                                                                 <p class="col text-left line-md padding-5">Faremos um site para <span class="dark-gradient font-weight-bolder">login</span> que fornecerá um sistema de <span class="dark-gradient font-weight-bolder">contas</span> e <span class="dark-gradient font-weight-bolder">níveis de usuário</span> para auxiliar na adiministração do seu negócio a partir de um <span class="dark-gradient font-weight-bolder">banco de dados</span> conectado ao fundo.</p>
                                                             </div>
