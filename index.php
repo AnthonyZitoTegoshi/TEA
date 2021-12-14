@@ -485,9 +485,9 @@
     ?>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <section class=" container padding-10 whatsapp-button" style="background-color: red;">
-        <div class="row-end">
-            <div class="col-3-xs col-3-sm col-2-md col-2-xl col-2-lg">
+    <section class="container padding-10 whatsapp-button">
+        <div class="row-center items-center flex-nowrap">
+            <div class="col-11-sm col-10-md col-9-lg col-8-xl col-7-xx">
                 <div class="container">
                     <div class="row flex-nowrap items-end">
                         <div class="col fit-child empty-default">
