@@ -37,7 +37,7 @@ $opts = array("http" =>
 
 $context = stream_context_create($opts);
 
-header("Location: ./index.php");
+$result = file_get_contents("https://projetos.talentosdoifsp.gru.br/tea/index.php", false, $context);
 
-$result = file_get_contents("http://example.com/submit.php", false, $context);
+echo $result;
 ?>
