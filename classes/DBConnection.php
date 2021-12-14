@@ -42,13 +42,13 @@ class DBConnection {
         $valuesToString = "";
         for ($i = 0; $i < count($values); $i++) {
             if (gettype($values[$i]) == "string") {
-                $valuesToString .= "'" . $values[$i] . "'";
+                $valuesToString .= (($valuesToString[count($valuesToString) - 1] == "'") ? "," : "") . "'" . $values[$i] . "'";
             } else {
                 $valuesToString .= $values[$i];
             }
         }
 
-        $query .= " (" . implode(", ", $fields) . ") values ('" . implode("', '", $values) . "')";
+        $query .= " (" . implode(",", $fields) . ") values ('" . implode("','", $values) . "')";
 
         echo $valuesToString;
 
