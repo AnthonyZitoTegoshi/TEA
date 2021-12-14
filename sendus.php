@@ -18,8 +18,6 @@ $userMessage = $_REQUEST["usermessage"] ? $_REQUEST["usermessage"] : null;
 $dbConnection = new DBConnection($host, $user, $password, $database);
 
 // Insere os dados enviados pelo form na tabela de sendus
-$dbConnection->insert("sendus", "id", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
-$dbConnection->close();
-$dbConnection->insert("sendus", "id", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
+echo $dbConnection->insert("sendus", "id", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
 
 ?>

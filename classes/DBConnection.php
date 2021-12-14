@@ -50,7 +50,7 @@ class DBConnection {
 
         $query .= " (" . implode(",", $fields) . ") values (" . $valuesToString . ")";
 
-        $this->getConnection()->query($query);
+        return $this->getConnection()->query($query);
     }
 
     public function close() {
