@@ -2,7 +2,7 @@
 
 class DBConnection {
     
-    public $teste = "Olá, mundo!";
+    public $teste = new msql;
     
 }
 
