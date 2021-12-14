@@ -26,7 +26,7 @@
 </head>
 <body>
     <?php
-        echo $_POST["response"];
+        echo $_SESSION["queryStatus"];
     ?>
     
     <!------------------------------HEADER------------------------------>
