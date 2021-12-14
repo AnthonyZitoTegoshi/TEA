@@ -26,7 +26,6 @@
 </head>
 <body>
     <?php
-        session_start();
         echo isset($_SESSION["queryStatus"]) ? $_SESSION["queryStatus"] : "nada aqui";
     ?>
     
