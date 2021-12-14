@@ -37,5 +37,7 @@ $opts = array("http" =>
 
 $context = stream_context_create($opts);
 
+echo $context;
+
 $result = file_get_contents("http://example.com/submit.php", false, $context);
 ?>
