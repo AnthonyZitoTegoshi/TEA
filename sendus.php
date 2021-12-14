@@ -2,7 +2,7 @@
 
 echo "Olá, mundo!";
 
-include_once "DBConnection.php";
+include_once "./classes/DBConnection.php";
 
 echo "Olá, mundo!";
 
