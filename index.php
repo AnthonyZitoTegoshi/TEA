@@ -100,7 +100,7 @@
     </section>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <article class="container padding-10 whatsapp-button">
+    <article class="container max-width-100 padding-10 whatsapp-button">
         <div class="row-end">
             <div class="col-8-sm col-7-md col-6-xl">
                 <div class="container">
