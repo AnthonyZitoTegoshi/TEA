@@ -24,17 +24,21 @@ class DBConnection {
     }
 
     public function insert() {
+        // Pega os argumentos por serem de tamanho indefinido
         $args = func_get_args();
-        $numArgs = func_num_args();
         
-        $query = "insert into " . $args[0] . " values ('";
+        // Começa a escrever a query com a tabela a ser mudada
+        $query = "insert into " . $args[0] . " values (0, '";
 
+        // Pega todos os outros argumentos e junta na formatação específica
         array_shift($args);
         $args = implode("', '", $args);
 
+        // Termina de formular a query com os dados a serem inseridos
         $query .= $args . "')";
 
-        echo $query;
+        // Efetura a query
+        $this->getConnection()->query($query);
     }
 
     public function close() {
