@@ -99,13 +99,6 @@
         </div>
     </section>
 
-    <!------------------------------Whatsapp Button------------------------------>
-    <article class="container right bottom fit-child padding-10 whatsapp-button">
-        <div class="row-center items-center">
-        <img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100">
-        </div>
-    </article>
-
     <!------------------------------HISTÓRIA------------------------------>
     <div id="sobre" class="marker"></div>
     <section id="begin-lift" class="container poppins dark bg-light">
@@ -486,7 +479,7 @@
 
     <!------------------------------Whatsapp Button------------------------------>
     <section class="container padding-10 whatsapp-button">
-        <div class="row-center items-center flex-nowrap">
+        <div class="row-center items-end flex-nowrap">
             <div class="col-11-sm col-10-md col-9-lg col-8-xl col-7-xx">
                 <div class="container">
                     <div class="row flex-nowrap items-end">
