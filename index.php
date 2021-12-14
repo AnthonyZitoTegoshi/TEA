@@ -101,23 +101,7 @@
 
     <!------------------------------Whatsapp Button------------------------------>
     <article class="container max-width-100 padding-10 whatsapp-button">
-        <div class="row-end">
-            <div class="col-8-sm col-7-md col-6-xl">
-                <div class="container">
-                    <div class="row flex-nowrap items-end">
-                        <div class="col fit-child empty-default">
-                            <div class="container">
-                                <div class="row-end items-end">
-                                    <div class="col">
-                                        <button class="rounded padding-5 empty-default bg-dark-gradient"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <button class="rounded padding-5 empty-default bg-dark-gradient"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100"></button>
     </article>
 
     <!------------------------------HISTÓRIA------------------------------>
