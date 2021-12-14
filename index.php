@@ -101,7 +101,9 @@
 
     <!------------------------------Whatsapp Button------------------------------>
     <article class="container right bottom fit-child padding-10 whatsapp-button">
+        <div class="row-center items-center">
         <img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100">
+        </div>
     </article>
 
     <!------------------------------HISTÓRIA------------------------------>
