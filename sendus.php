@@ -6,7 +6,7 @@ $userName = $_REQUEST["username"] ? $_REQUEST["username"] : null;
 $userContact = $_REQUEST["usercontact"] ? $_REQUEST["usercontact"] : null;
 $userMessage = $_REQUEST["usermessage"] ? $_REQUEST["usermessage"] : null;
 
-$dbConnection = new DBConnection("localhost", "talentos_tea_user", "ifsp@2021", "talentos_tea");
+$dbConnection = new DBConnection("localhst", "talentos_tea_user", "ifsp@2021", "talentos_tea");
 
 
 
