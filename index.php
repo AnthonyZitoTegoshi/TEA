@@ -24,15 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>
-    <?php
-        session_start();
-        if (isset($_SESSION["queryStatus"])) {
-            echo "<script>alert(" . $_SESSION["queryStatus"] . ")</script>";
-            session_destroy();
-        }
-    ?>
-    
+<body>    
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
@@ -497,6 +489,14 @@
         </div>
     </section>
 
+    <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
+    <?php
+        session_start();
+        if (isset($_SESSION["queryStatus"])) {
+            echo "<script>alert(" . $_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde" . ")</script>";
+            session_destroy();
+        }
+    ?>
 
     <!------------------------------MAIN_JS------------------------------>
     <script src="./assets/js/main.js"></script>

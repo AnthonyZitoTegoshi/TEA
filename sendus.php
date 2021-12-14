@@ -18,7 +18,7 @@ $userMessage = isset($_REQUEST["usermessage"]) ? $_REQUEST["usermessage"] : null
 $dbConnection = new DBConnection($host, $user, $password, $database);
 
 // Insere os dados enviados pelo form na tabela de sendus
-$response = $dbConnection->insert("sendus", "i", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
+$response = $dbConnection->insert("sendus", "id", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
 
 // Volta para a página all-in-one enviando o resultado da query pela session
 session_start();
