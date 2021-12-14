@@ -478,8 +478,8 @@
     ?>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <section id="whatsapp-button" class="container fit-child padding-10 right bottom whatsapp-button lift-4 display-none">
-        <a class="col fit-child padding-10"><img class="img-fluid col rounded padding-10 max-width-75 bg-dark-gradient" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
+    <section id="whatsapp-button" class="container fit-child padding-10 right bottom whatsapp-button display-none">
+        <a class="col fit-child padding-10"><img class="img-fluid col rounded padding-10 max-width-75 bg-dark-gradient lift-4" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
     </section>
 
     <!------------------------------MAIN_JS------------------------------>
