@@ -25,6 +25,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
+    <?php
+        echo $_POST["response"];
+    ?>
     
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>

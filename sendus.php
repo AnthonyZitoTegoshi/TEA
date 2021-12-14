@@ -30,14 +30,14 @@ $postdata = http_build_query(
 $opts = array("http" =>
     array(
         "method"  => "POST",
-        "header"  => "Location: ./index.html",
+        "header"  => ["Location: ./index.php", "Content-type: application/x-www-form-urlencoded"],
         "content" => $postdata
     )
 );
 
 $context = stream_context_create($opts);
 
-echo $context;
+header("Location: ./index.php");
 
 $result = file_get_contents("http://example.com/submit.php", false, $context);
 ?>
