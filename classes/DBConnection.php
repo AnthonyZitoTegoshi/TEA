@@ -27,7 +27,9 @@ class DBConnection {
         $args = func_get_args();
         $numArgs = func_num_args();
 
-        echo $args;
+        for ($i = 0; $i < count($args); $i++) {
+            echo $args[$i];
+        }
     }
 
     public function close() {
