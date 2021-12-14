@@ -17,11 +17,7 @@ $userMessage = $_REQUEST["usermessage"] ? $_REQUEST["usermessage"] : null;
 // Cria uma nova conexão para futuro uso
 $dbConnection = new DBConnection($host, $user, $password, $database);
 
-echo $dbConnection->getHost();
-$dbConnection->close();
-echo $dbConnection->getHost();
-
 // Insere os dados enviados pelo form na tabela de sendus
-//$dbConnection->insert("sendus", $userName, $userContact, $userMessage);
+$dbConnection->insert("sendus", $userName, $userContact, $userMessage);
 
 ?>
