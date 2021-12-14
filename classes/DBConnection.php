@@ -20,6 +20,38 @@ class DBConnection {
         $this->host = $host;
     }
 
+    public function getUser() {
+        return $this->user;
+    }
+
+    public function setUser($user) {
+        $this->user = $user;
+    }
+
+    public function getPassword() {
+        return $this->password;
+    }
+
+    public function setPassword($password) {
+        $this->password = $password;
+    }
+
+    public function getDatabase() {
+        return $this->database;
+    }
+
+    public function setDatabase($database) {
+        $this->database = $database;
+    }
+
+    public function getConnection() {
+        return $this->connection;
+    }
+
+    public function setConnection($connection) {
+        $this->connection = $connection;
+    }
+
 }
 
 ?>

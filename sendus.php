@@ -8,7 +8,16 @@ $userMessage = $_REQUEST["usermessage"] ? $_REQUEST["usermessage"] : null;
 
 $dbConnection = new DBConnection();
 
-$dbConnection->setHost("asd");
-echo $dbConnection->getHost();
+$dbConnection->setHost("host");
+$dbConnection->setUser("user");
+$dbConnection->setPassword("password");
+$dbConnection->setDatabase("database");
+$dbConnection->setConnection("connection");
+
+echo $dbConnection->getHost("host");
+echo $dbConnection->getUser("user");
+echo $dbConnection->getPassword("password");
+echo $dbConnection->getDatabase("database");
+echo $dbConnection->getConnection("connection");
 
 ?>
