@@ -26,7 +26,7 @@ class DBConnection {
     public function insert() {
         $args = func_get_args();
         
-        $query = "insert into " . $args[0] . " (";
+        $query = "insert into " . $args[0];
 
         array_shift($args);
         $fields = Array();
@@ -39,9 +39,9 @@ class DBConnection {
             }
         }
 
-        for ($i = 0; $i < count($values); $i++) {
-            echo $values[$i];
-        }
+        $query .= " (" . implode(", ", $fields) . ") values ('" . implode("', '", $values) . "')";
+
+        echo $query;
 
         //$this->getConnection()->query($query);
     }
