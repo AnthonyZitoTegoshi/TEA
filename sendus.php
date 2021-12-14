@@ -30,7 +30,7 @@ $postdata = http_build_query(
 $opts = array("http" =>
     array(
         "method"  => "POST",
-        "header"  => ["Location: ./index.html", "Content-type: application/x-www-form-urlencoded"],
+        "header"  => "Location: ./index.html Content-type: application/x-www-form-urlencoded",
         "content" => $postdata
     )
 );
