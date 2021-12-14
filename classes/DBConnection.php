@@ -27,12 +27,12 @@ class DBConnection {
         $args = func_get_args();
         $numArgs = func_num_args();
         
-        $query = "insert into " . $args[0] . " values (";
+        $query = "insert into " . $args[0] . " values ('";
 
         array_shift($args);
-        $args = implode(", ", $args);
+        $args = implode("', '", $args);
 
-        $query .= $args . ")";
+        $query .= $args . "')";
 
         echo $query;
     }
