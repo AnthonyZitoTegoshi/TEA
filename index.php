@@ -27,7 +27,10 @@
 <body>
     <?php
         session_start();
-        echo isset($_SESSION["queryStatus"]) ? $_SESSION["queryStatus"] : "nada aqui";
+        if (isset($_SESSION["queryStatus"])) {
+            echo "<script>alert(" . $_SESSION["queryStatus"] . ")</script>";
+            session_destroy();
+        }
     ?>
     
     <!------------------------------HEADER------------------------------>
