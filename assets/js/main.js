@@ -20,6 +20,7 @@ function windowLoaded() {
 
 function windowScrolled(e) {
     var headerSticky = document.getElementById("header-sticky");
+    var whatsappButton = document.getElementById("whatsapp-button");
     var postWelcome = document.getElementById("begin-lift");
     var classes = headerSticky.classList;
     for (var j = 0; j < classes.length; j++) {
@@ -28,8 +29,10 @@ function windowScrolled(e) {
         }
     }
     headerSticky.setAttribute("class", classes.toString());
+    whatsappButton.style.display = "block";
     if (headerSticky.getBoundingClientRect().height > postWelcome.getBoundingClientRect().top) {
         headerSticky.setAttribute("class", classes.toString() + " lift-4");
+        whatsappButton.style.display = "block";
     }
 }
 
