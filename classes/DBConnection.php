@@ -8,9 +8,20 @@ class DBConnection {
     private $database;
     private $connection;
 
-    /*function __construct($host, $user, $password, $database) {
-
-    }*/
+    function __construct($host, $user, $password, $database) {
+        $this->setHost($host);
+        $this->setUser($user);
+        $this->setPassword($password);
+        $this->setDatabase($database);
+        $this->setConnection(
+            new mysqli(
+                $this->getHost(),
+                $this->getUser(),
+                $this->getPassword(),
+                $this->getDatabase()
+            )
+        );
+    }
     
     public function getHost() {
         return $this->host;
@@ -49,7 +60,11 @@ class DBConnection {
     }
 
     public function setConnection($connection) {
-        $this->connection = $connection;
+        if ($connection->connect_error) {
+            echo $connection->connect_error;
+        } else {
+            $this->connection = $connection;
+        }
     }
 
 }
