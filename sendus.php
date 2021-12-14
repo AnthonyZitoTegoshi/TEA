@@ -20,6 +20,22 @@ $dbConnection = new DBConnection($host, $user, $password, $database);
 // Insere os dados enviados pelo form na tabela de sendus
 $response = $dbConnection->insert("sendus", "i", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
 
-header("Location: ./index.html");
+// Volta para a página all-in-one enviando o resultado da query
+$postdata = http_build_query(
+    array(
+        "response" => $response
+    )
+);
 
+$opts = array("http" =>
+    array(
+        "method"  => "POST",
+        "header"  => ["Location: ./index.html", "Content-type: application/x-www-form-urlencoded"],
+        "content" => $postdata
+    )
+);
+
+$context = stream_context_create($opts);
+
+$result = file_get_contents("http://example.com/submit.php", false, $context);
 ?>
