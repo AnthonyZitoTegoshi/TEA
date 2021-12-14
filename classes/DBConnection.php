@@ -39,8 +39,8 @@ class DBConnection {
             }
         }
 
-        for ($i = 0; $i < count($fields); $i++) {
-            echo $fields[$i];
+        for ($i = 0; $i < count($values); $i++) {
+            echo $values[$i];
         }
 
         //$this->getConnection()->query($query);
