@@ -482,7 +482,6 @@
         <a class="col fit-child padding-20"><img class="img-fluid col rounded padding-10 max-width-75 bg-dark-gradient" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
     </section>
 
-
     <!------------------------------MAIN_JS------------------------------>
     <script src="./assets/js/main.js"></script>
 </body>
