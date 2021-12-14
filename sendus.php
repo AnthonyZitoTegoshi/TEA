@@ -2,7 +2,9 @@
 
 echo "Olá, mundo!";
 
-import_once("./classes/DBConnection.php");
+include_once "DBConnection.php";
+
+echo "Olá, mundo!";
 
 $dbConnection = new DBConnection();
 
