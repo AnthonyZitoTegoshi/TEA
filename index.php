@@ -100,7 +100,7 @@
     </section>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <section class=" container padding-10 whatsapp-button" style="background-color: red;">
+    <article class="container padding-10 whatsapp-button">
         <div class="row-end">
             <div class="col-8-sm col-7-md col-6-xl">
                 <div class="container">
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </article>
 
     <!------------------------------HISTÓRIA------------------------------>
     <div id="sobre" class="marker"></div>
