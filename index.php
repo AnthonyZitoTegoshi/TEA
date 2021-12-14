@@ -478,14 +478,8 @@
     ?>
 
     <!------------------------------Whatsapp Button------------------------------>
-    <section class="container padding-10 whatsapp-button">
-        <div class="row-center items-end flex-nowrap">
-            <div class="col-11-sm col-10-md col-9-lg col-8-xl col-7-xx">
-                <div class="row-end items-center flex-nowrap">
-                    <a class="rounded fit-child"><img class="img-fluid col radius padding-10 max-width-75 bg-dark-gradient" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
-                </div>
-            </div>
-        </div>
+    <section class="container padding-20 right bottom whatsapp-button">
+        <a class="fit-child padding-20"><img class="img-fluid col rounded padding-10 max-width-75 bg-dark-gradient" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
     </section>
 
 
