@@ -29,7 +29,7 @@ function windowScrolled(e) {
         }
     }
     headerSticky.setAttribute("class", classes.toString());
-    whatsappButton.style.display = "block";
+    whatsappButton.style.display = "none";
     if (headerSticky.getBoundingClientRect().height > postWelcome.getBoundingClientRect().top) {
         headerSticky.setAttribute("class", classes.toString() + " lift-4");
         whatsappButton.style.display = "block";
