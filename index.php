@@ -24,8 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>
-    
+<body>    
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
@@ -99,6 +98,11 @@
             </div>
         </div>
     </section>
+
+    <!------------------------------Whatsapp Button------------------------------>
+    <article class="container max-width-100 right bottom padding-10 whatsapp-button">
+        <button class="rounded padding-5 empty-default bg-dark-gradient"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100"></button>
+    </article>
 
     <!------------------------------HISTÓRIA------------------------------>
     <div id="sobre" class="marker"></div>
@@ -469,6 +473,14 @@
         </div>
     </section>
 
+    <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
+    <?php
+        session_start();
+        if (isset($_SESSION["queryStatus"])) {
+            echo "<script>alert('" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . "')</script>";
+            session_destroy();
+        }
+    ?>
 
     <!------------------------------Whatsapp Button------------------------------>
     <section class=" container padding-10 whatsapp-button" style="background-color: red;">
