@@ -9,12 +9,13 @@ function displayText(id) {
 }
 
 function windowLoaded() {
-    // Joga a página para o topo independente de onde estiver
-    window.scrollTo(0, 0);
-
     // Seta o tamanho mínimo das boas vindas
     var welcomeContainer = document.getElementById("welcome-container");
     welcomeContainer.style.minHeight = (welcomeContainer.getElementsByClassName("rule")[0].getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2))) + "px";
+    
+    // Joga a página para o topo independente de onde estiver
+    window.scrollTo(0, 0);
+
 }
 
 function windowScrolled(e) {
@@ -157,8 +158,7 @@ function dropdownToggle(e) {
         var itemsRect = items.getBoundingClientRect();
 
         // Verifica se o mouse está ou não sobre o dropdown para mostrar ou não o filho
-        if (dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY && dropdown.width > 0 && dropdown.height > 0 && (itemsCS.display == "none" || itemsCS.display != "none" && e.type == "mouseover") || itemsRect.left <= e.clientX && itemsRect.left + itemsRect.width >= e.clientX && itemsRect.top <= e.clientY && itemsRect.top + itemsRect.height >= e.clientY && itemsRect.width > 0 && itemsRect.height > 0 && e.type == "mouseover") {
-            alert(e.type);
+        if (dropdown.left <= e.clientX && dropdown.left + dropdown.width >= e.clientX && dropdown.top <= e.clientY && dropdown.top + dropdown.height >= e.clientY && dropdown.width > 0 && dropdown.height > 0 && itemsCS.display == "none") {
             // Ativa o filho para pegar os seus valores quando está visível
             items.style.display = "block";
 
@@ -193,7 +193,7 @@ window.addEventListener("scroll", windowScrolled);
 window.addEventListener("click",dropdownToggle);
 
 // Listen que verifica se o dropdown está com o mouse sobreposto
-window.addEventListener("mouseover", dropdownToggle);
+//widow.addEventListener("mouseover", dropdownToggle);
 
 // Chama a função uma vez quando estiver carregada a página
 window.addEventListener("load", windowLoaded);
