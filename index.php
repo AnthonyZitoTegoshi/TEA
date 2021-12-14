@@ -493,7 +493,7 @@
     <?php
         session_start();
         if (isset($_SESSION["queryStatus"])) {
-            echo "<script>alert(" . $_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde" . ")</script>";
+            echo "<script>alert(" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . ")</script>";
             session_destroy();
         }
     ?>
