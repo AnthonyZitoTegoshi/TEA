@@ -482,6 +482,28 @@
         }
     ?>
 
+    <!------------------------------Whatsapp Button------------------------------>
+    <section class=" container padding-10 whatsapp-button" style="background-color: red;">
+        <div class="row-end">
+            <div class="col-3-xs col-3-sm col-2-md col-2-xl col-2-lg">
+                <div class="container">
+                    <div class="row flex-nowrap items-end">
+                        <div class="col fit-child empty-default">
+                            <div class="container">
+                                <div class="row-end items-end">
+                                    <div class="col">
+                                        <button class="rounded padding-5 empty-default bg-dark-gradient"><img src="./assets/img/button_img/whatsapp_logo.png" alt="Whatsapp-Image" class="img-fluid col max-width-100"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!------------------------------MAIN_JS------------------------------>
     <script src="./assets/js/main.js"></script>
 </body>
