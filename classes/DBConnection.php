@@ -42,9 +42,9 @@ class DBConnection {
         $valuesToString = "";
         for ($i = 0; $i < count($values); $i++) {
             if (gettype($values[$i]) == "string") {
-                $valuesToString .= (($valuesToString[count($valuesToString)] == "'") ? "," : "") . "'" . $values[$i] . "'";
+                $valuesToString .= (($valuesToString != "") ? "," : "") . "'" . $values[$i] . "'";
             } else {
-                $valuesToString .= $values[$i];
+                $valuesToString .= (($valuesToString != "") ? "," : "") . $values[$i];
             }
         }
 
