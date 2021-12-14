@@ -23,6 +23,13 @@ class DBConnection {
         );
     }
 
+    public function insert() {
+        $args = func_get_args();
+        $numArgs = func_num_args();
+
+        echo $args;
+    }
+
     public function close() {
         $this->getConnection()->close();
     }
