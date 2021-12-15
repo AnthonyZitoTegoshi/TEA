@@ -904,6 +904,27 @@ h1, h2, h3, h4, h5, h6, p {
 [class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);transition: all 0.2s linear;}
 [class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);transition: all 0.2s linear;}
 
+.focus-light:focus-within {color: var(--light); /*transition: all 0.1s linear;*/}
+.focus-dark:focus-within {color: var(--dark); /*transition: all 0.1s linear;*/}
+.focus-light-purple:focus-within {color: var(--lightPurple); /*transition: all 0.1s linear;*/}
+.focus-normal-purple:focus-within {color: var(--normalPurple); /*transition: all 0.1s linear;*/}
+.focus-dark-purple:focus-within {color: var(--darkPurple); /*transition: all 0.1s linear;*/}
+.focus-dark-gradient:focus-within {
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*transition: all 0.1s linear;*/
+}
+.focus-light-gradient:focus-within {
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*transition: all 0.1s linear;*/
+    
+}
+
 .focus-bg-light:focus-within {background-color: var(--light);}
 .focus-bg-dark:focus-within {background-color: var(--dark);}
 .focus-bg-light-purple:focus-within {background-color: var(--lightPurple);}
