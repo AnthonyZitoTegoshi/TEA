@@ -473,7 +473,9 @@
             <div class="text-left line-md poppins padding-10">
                 Mensagem enviada com sucesso!
             </div>
+            <div class="col fit-child padding-10">
             <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius">Entendido!</div>
+            </div>
         </div>
     </div>
 
