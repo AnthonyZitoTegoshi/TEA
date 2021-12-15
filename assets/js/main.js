@@ -201,3 +201,4 @@ window.addEventListener("click",dropdownToggle);
 // Chama a função uma vez quando estiver carregada a página
 window.addEventListener("load", windowLoaded);
 window.addEventListener("load", windowResized);
+window.addEventListener("load", windowScrolled);
