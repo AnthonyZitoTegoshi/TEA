@@ -23,7 +23,6 @@ $response = $dbConnection->insert("sendus", "id", 0, "username", $userName, "use
 // Volta para a página all-in-one enviando o resultado da query pela session
 session_start();
 $_SESSION["queryStatus"] = $response;
-echo $_SESSION["queryStatus"];
-//header("Location: ./index.php");
+header("Location: ./index.php");
 
 ?>
