@@ -483,7 +483,7 @@
                 </div>
             </div>";
             echo "<script>alert('" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . "')</script>";
-            session_destroy();
+            //session_destroy();
         }
     ?>
 
