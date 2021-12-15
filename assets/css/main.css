@@ -49,6 +49,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    transition: all 0.1s linear;
 }
 
 body {
@@ -835,38 +836,38 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.0);
     transform: scale(1.0);
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
 }
 
 .focus:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
 }
 
 .no-resize {resize: none;}
 
 [type="submit"] {cursor: pointer;}
 
-.hover-light:hover {color: var(--light); transition: all 0.1s linear;}
-.hover-dark:hover {color: var(--dark); transition: all 0.1s linear;}
-.hover-light-purple:hover {color: var(--lightPurple); transition: all 0.1s linear;}
-.hover-normal-purple:hover {color: var(--normalPurple); transition: all 0.1s linear;}
-.hover-dark-purple:hover {color: var(--darkPurple); transition: all 0.1s linear;}
+.hover-light:hover {color: var(--light); /*transition: all 0.1s linear;*/}
+.hover-dark:hover {color: var(--dark); /*transition: all 0.1s linear;*/}
+.hover-light-purple:hover {color: var(--lightPurple); /*transition: all 0.1s linear;*/}
+.hover-normal-purple:hover {color: var(--normalPurple); /*transition: all 0.1s linear;*/}
+.hover-dark-purple:hover {color: var(--darkPurple); /*transition: all 0.1s linear;*/}
 .hover-dark-gradient:hover {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
 }
 .hover-light-gradient:hover {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
     
 }
 
@@ -892,7 +893,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 [class*="hover-lift"] {
     box-shadow: 0px 0px 0px 0px #000000;
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
 }
 .hover-lift-2 {box-shadow: 0px 0px 0px 0px #000000;}
 .hover-lift-4 {box-shadow: 0px 0px 0px 0px #000000;}
@@ -902,7 +903,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 [class*="hover-lift"]:hover {
     box-shadow: 0px 0px 2px 0px #000000;
-    transition: all 0.1s linear;
+    /*transition: all 0.1s linear;*/
 }
 .hover-lift-2:hover {box-shadow: 0px 0px 2px 0px #000000;}
 .hover-lift-4:hover {box-shadow: 0px 0px 4px 0px #000000;}
