@@ -847,9 +847,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .no-resize {resize: none;}
 
-[type="submit"] {
-    cursor: pointer;
-}
+[type="submit"] {cursor: pointer;}
 
 .hover-light:hover {color: var(--light); }
 .hover-dark:hover {color: var(--dark);}
