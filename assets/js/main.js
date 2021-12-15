@@ -188,6 +188,14 @@ function dropdownToggle(e) {
     }
 }
 
+function frmValidate() {
+    var userName = document.getElementsByName("username")[0];
+    var userContact = document.getElementsByName("usercontact")[0];
+    var userMessage = document.getElementsByName("usermessage")[0];
+
+    alert(userName.value);
+}
+
 // Seta quando chamar a função de resize
 window.addEventListener("resize", windowResized);
 
