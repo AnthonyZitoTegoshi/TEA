@@ -469,7 +469,7 @@
     </section>
 
     <div class="container fit-child screen-center bg-dark-gradient light padding-5 radius-20">
-        <div class="col padding-20 radius-10">
+        <div class="col padding-20 radius-10 bg-light">
             Teste de mensagem
         </div>
     </div>
