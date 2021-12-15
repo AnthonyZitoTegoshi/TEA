@@ -468,7 +468,7 @@
         </div>
     </section>
 
-    <div class="container fit-child screen-center bg-dark padding-20 radius-20">asd</div>
+    <div class="container fit-child screen-center bg-dark light padding-20 radius-20" style="min-width=200px; min-height=200px; max-width=100vw; max-height=100vh">asd</div>
 
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
