@@ -49,7 +49,6 @@ class DBConnection {
         }
 
         $query .= " (" . implode(",", $fields) . ") values (" . $valuesToString . ")";
-        echo $query;
 
         return $this->getConnection()->query($query);
     }
