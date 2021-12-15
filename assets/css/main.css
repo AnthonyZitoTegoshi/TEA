@@ -888,14 +888,14 @@ h1, h2, h3, h4, h5, h6, p {
 .focus-bg-light-gradient:focus-within {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
 
 [class*="hover-lift"] {
-    box-shadow: 0px 0px 2px 0px #000000;
+    box-shadow: 0px 0px 0px 0px #000000;
     transition: all 0.1s linear;
 }
-.hover-lift-2 {box-shadow: 0px 0px 2px 0px #000000;}
-.hover-lift-4 {box-shadow: 0px 0px 4px 0px #000000;}
-.hover-lift-6 {box-shadow: 0px 0px 6px 0px #000000;}
-.hover-lift-8 {box-shadow: 0px 0px 8px 0px #000000;}
-.hover-lift-10 {box-shadow: 0px 0px 10px 0px #000000;}
+.hover-lift-2 {box-shadow: 0px 0px 0px 0px #000000;}
+.hover-lift-4 {box-shadow: 0px 0px 0px 0px #000000;}
+.hover-lift-6 {box-shadow: 0px 0px 0px 0px #000000;}
+.hover-lift-8 {box-shadow: 0px 0px 0px 0px #000000;}
+.hover-lift-10 {box-shadow: 0px 0px 0px 0px #000000;}
 
 [class*="hover-lift"]:hover {
     box-shadow: 0px 0px 2px 0px #000000;
