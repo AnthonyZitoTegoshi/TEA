@@ -479,7 +479,7 @@
 
     <!------------------------------Whatsapp Button------------------------------>
     <section id="whatsapp-button" class="container fit-child padding-20 right bottom whatsapp-button display-none">
-        <a href="https://api.whatsapp.com/send?phone=5511977417856&text=Quero%20contratar%20a%20TEA" class="col fit-child padding-10"><img class="img-fluid col rounded padding-10 width-5 bg-dark-gradient lift" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
+        <a title="Converse conosco diretamente pelo Whatsapp" href="https://api.whatsapp.com/send?phone=5511977417856&text=Quero%20contratar%20a%20TEA" class="col fit-child padding-10"><img class="img-fluid col rounded padding-10 width-5 bg-dark-gradient lift" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
     </section>
 
     <!------------------------------MAIN_JS------------------------------>
