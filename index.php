@@ -24,7 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>    
+<body><?php session_start(); echo $_SESSION["queryStatus"]?>
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
@@ -361,7 +361,7 @@
                             </div>
                             <div class="col">
                                 <div class="row-evenly items-center flex-column">
-                                    <div class="col-11-sm col-10-lg col-9-xx padding-10 afocus">
+                                    <div class="col-11-sm col-10-lg col-9-xx padding-10">
                                         <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
@@ -380,7 +380,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-11-sm col-10-lg col-9-xx padding-10 afocus">
+                                    <div class="col-11-sm col-10-lg col-9-xx padding-10">
                                         <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
@@ -399,7 +399,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-11-sm col-10-lg col-9-xx padding-10 afocus">
+                                    <div class="col-11-sm col-10-lg col-9-xx padding-10">
                                         <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
@@ -441,22 +441,22 @@
                             <div class="col-8-sm col-7-md col-6-xl">
                                 <form class="row-center items-center flex-column flex-nowrap" name="sendusfrm" action="sendus.php" method="post">
                                     <div class="col padding-10">
-                                        <div class="col padding-2 radius bg-light focus-bg-light-gradient">
+                                        <div class="col padding-2 radius bg-light focus-bg-light-purple hover-from-bg-light-to-bg-light-purple">
                                             <input class="col nunito light bg-dark padding-10 font-size-sm text-center border-0 radius" type="text" name="username" placeholder="Digite aqui seu nome ou apelido">
                                         </div>
                                     </div>
                                     <div class="col padding-10">
-                                        <div class="col padding-2 radius bg-light focus-bg-light-gradient">
+                                        <div class="col padding-2 radius bg-light focus-bg-light-purple hover-from-bg-light-to-bg-light-purple">
                                             <input class="col nunito light bg-dark padding-10 font-size-sm text-center border-0 radius" type="text" name="usercontact" placeholder="Telefone ou email para contato">
                                         </div>
                                     </div>
                                     <div class="col padding-10">
-                                        <div class="col padding-2 radius-20 bg-light focus-bg-light-gradient">
+                                        <div class="col padding-2 radius-20 bg-light focus-bg-light-purple hover-from-bg-light-to-bg-light-purple">
                                             <textarea class="col nunito light bg-dark padding-20 font-size-sm text-left border-0 radius-20 no-resize" name="usermessage" cols="30" rows="10" placeholder="Conte-nos o que deseja que entraremos em contato o mais breve possível"></textarea>
                                         </div>
                                     </div>
                                     <div class="col fit-child padding-10">
-                                        <input class="col poppins dark bg-light hover-bg-light-gradient hover-light padding-10 text-center border-0 radius" type="submit" value="Enviar mensagem">
+                                        <input class="col poppins dark bg-light hover-from-dark-to-light hover-from-bg-light-to-bg-light-purple focus-light focus-bg-light-purple padding-10 text-center border-0 radius" type="button" value="Enviar mensagem" onclick="frmValidate()">
                                     </div>
                                 </form>
                             </div>
@@ -472,6 +472,16 @@
     <?php
         session_start();
         if (isset($_SESSION["queryStatus"])) {
+            echo "<div id='queryStatusPopup' class='container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10'>
+                <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
+                    <div class='text-left line-md poppins padding-20'>"
+                        . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") .
+                    "</div>
+                    <div class='col fit-child padding-10'>
+                        <div class='text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer' onclick='document.getElementById('queryStatusPopup').remove()'>Entendido!</div>
+                    </div>
+                </div>
+            </div>";
             echo "<script>alert('" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . "')</script>";
             session_destroy();
         }
@@ -480,7 +490,7 @@
     <!------------------------------Whatsapp Button------------------------------>
     <section id="whatsapp-button" class="container fit-child padding-20 right bottom whatsapp-button display-none">
         <div class="col fit-child padding-10">
-        <a href="https://api.whatsapp.com/send?phone=5511977417856&text=Quero%20contratar%20a%20TEA" target="blank" class="col fit-child rounded"><img class="img-fluid col rounded padding-10 width-5 bg-dark-gradient lift focus" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=5511977417856&text=Quero%20contratar%20a%20TEA" target="blank" class="col fit-child rounded"><img class="img-fluid col rounded padding-10 width-5 bg-dark-gradient hover-lift focus" src="./assets/img/button_img/whatsapp_logo.png" alt="Logo do Whatsapp"></a>
         </div>
     </section>
 

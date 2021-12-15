@@ -1,7 +1,5 @@
 <?php
 
-ini_set('default_charset', 'utf-8');
-
 // Inclusão das classes necessárias
 include_once "./classes/DBConnection.php";
 
