@@ -470,10 +470,10 @@
 
     <div class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10">
         <div class="row-center items-end flex-nowrap flex-column padding-20 radius-10 bg-light">
-            <div class="text-left line-md nunito padding-10">
+            <div class="text-left line-md poppins padding-10">
                 Mensagem enviada com sucesso!
             </div>
-            <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius">Ok!</div>
+            <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius">Entendido!</div>
         </div>
     </div>
 
