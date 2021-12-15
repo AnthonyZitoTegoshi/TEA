@@ -473,7 +473,7 @@
             <div class="col padding-10">
                 Mensagem enviada com sucesso!
             </div>
-            <div class="col padding-10 radius-10 bg-dark-gradient light">Ok!</div>
+            <div class="col fit-child padding-10 radius bg-dark-gradient light">Ok!</div>
         </div>
     </div>
 
