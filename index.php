@@ -442,17 +442,17 @@
                                 <form class="row-center items-center flex-column flex-nowrap" name="sendusfrm" action="sendus.php" method="post">
                                     <div class="col padding-10">
                                         <div class="col padding-2 radius bg-light focus-bg-light-gradient">
-                                            <input class="col nunito light bg-dark focus-light-purple padding-10 font-size-sm text-center border-0 radius" type="text" name="username" placeholder="Digite aqui seu nome ou apelido">
+                                            <input class="col nunito light bg-dark padding-10 font-size-sm text-center border-0 radius" type="text" name="username" placeholder="Digite aqui seu nome ou apelido">
                                         </div>
                                     </div>
                                     <div class="col padding-10">
                                         <div class="col padding-2 radius bg-light focus-bg-light-gradient">
-                                            <input class="col nunito light bg-dark focus-light-purple padding-10 font-size-sm text-center border-0 radius" type="text" name="usercontact" placeholder="Telefone ou email para contato">
+                                            <input class="col nunito light bg-dark padding-10 font-size-sm text-center border-0 radius" type="text" name="usercontact" placeholder="Telefone ou email para contato">
                                         </div>
                                     </div>
                                     <div class="col padding-10">
                                         <div class="col padding-2 radius-20 bg-light focus-bg-light-gradient">
-                                            <textarea class="col nunito light bg-dark focus-light-purple padding-20 font-size-sm text-left border-0 radius-20 no-resize" name="usermessage" cols="30" rows="10" placeholder="Conte-nos o que deseja que entraremos em contato o mais breve possível"></textarea>
+                                            <textarea class="col nunito light bg-dark padding-20 font-size-sm text-left border-0 radius-20 no-resize" name="usermessage" cols="30" rows="10" placeholder="Conte-nos o que deseja que entraremos em contato o mais breve possível"></textarea>
                                         </div>
                                     </div>
                                     <div class="col fit-child padding-10">
