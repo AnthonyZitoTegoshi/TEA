@@ -24,7 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body><?php session_start(); echo count($_SESSION)?>
+<body>
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
@@ -470,7 +470,7 @@
 
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
-        session_start();
+        //session_start();
         if (isset($_SESSION["queryStatus"])) {
             echo "<div id='queryStatusPopup' class='container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10'>
                 <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
