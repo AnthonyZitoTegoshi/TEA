@@ -192,8 +192,17 @@ function frmValidate() {
     var userName = document.getElementsByName("username")[0];
     var userContact = document.getElementsByName("usercontact")[0];
     var userMessage = document.getElementsByName("usermessage")[0];
+    var sendusfrm = document.getElementsByName("sendusfrm")[0];
 
-    userName.value = userName.value.trim();
+    if (!userName.value.trim()) {
+        userName.focus();
+    } else if (!userContact.value.trim()) {
+        userContact.focus();
+    } else if (!userMessage.value.trim()) {
+        userMessage.focus();
+    } else {
+        sendusfrm.submit();
+    }
 }
 
 // Seta quando chamar a função de resize
