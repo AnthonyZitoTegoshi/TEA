@@ -198,6 +198,6 @@ window.addEventListener("click",dropdownToggle);
 //widow.addEventListener("mouseover", dropdownToggle);
 
 // Chama a função uma vez quando estiver carregada a página
-window.addEventListener("load", windowResized);
-window.addEventListener("load", windowScrolled);
+//window.addEventListener("load", windowResized);
+//window.addEventListener("load", windowScrolled);
 window.addEventListener("load", windowLoaded);
