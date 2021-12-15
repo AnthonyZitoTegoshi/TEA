@@ -20,7 +20,7 @@ function windowLoaded() {
     windowResized();
 
     // Joga a página para o topo independente de onde estiver
-    window.scrollTo(0, 0);
+    document.getElementById("go-home").click();
 }
 
 function windowScrolled(e) {
