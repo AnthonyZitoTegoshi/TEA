@@ -468,7 +468,7 @@
         </div>
     </section>
 
-    <div class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift">
+    <div class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10">
         <div class="col padding-20 radius-10 bg-light">
             <div class="col padding-20">
                 Mensagem
