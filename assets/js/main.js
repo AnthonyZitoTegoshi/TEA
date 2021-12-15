@@ -15,7 +15,6 @@ function windowLoaded() {
     
     // Joga a página para o topo independente de onde estiver
     window.scrollTo(0, 0);
-
 }
 
 function windowScrolled(e) {
@@ -199,6 +198,6 @@ window.addEventListener("click",dropdownToggle);
 //widow.addEventListener("mouseover", dropdownToggle);
 
 // Chama a função uma vez quando estiver carregada a página
-window.addEventListener("load", windowLoaded);
 window.addEventListener("load", windowResized);
 window.addEventListener("load", windowScrolled);
+window.addEventListener("load", windowLoaded);
