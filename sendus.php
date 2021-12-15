@@ -1,7 +1,5 @@
 <?php
 
-ini_set("default_charset", "UTF-8");
-
 // Inclusão das classes necessárias
 include_once "./classes/DBConnection.php";
 
@@ -12,9 +10,9 @@ $password = "ifsp@2021";
 $database = "talentos_tea";
 
 // Coleta os inputs do form de contato
-$userName = isset($_POST["username"]) ? utf8_encode($_POST["username"]) : null;
-$userContact = isset($_POST["usercontact"]) ? utf8_encode($_POST["usercontact"]) : null;
-$userMessage = isset($_POST["usermessage"]) ? utf8_encode($_POST["usermessage"]) : null;
+$userName = isset($_POST["username"]) ? $_POST["username"] : null;
+$userContact = isset($_POST["usercontact"]) ? $_POST["usercontact"] : null;
+$userMessage = isset($_POST["usermessage"]) ? $_POST["usermessage"] : null;
 
 // Cria uma nova conexão para futuro uso
 $dbConnection = new DBConnection($host, $user, $password, $database);

@@ -1,7 +1,5 @@
 <?php
 
-ini_set("default_charset", "UTF-8");
-
 class DBConnection {
 
     private $host;
@@ -23,11 +21,6 @@ class DBConnection {
                 $this->getDatabase()
             )
         );
-        mysqli_set_charset("utf8", $this->getConnection());
-        mysqli_query("SET NAMES 'utf8'");
-        mysqli_query("SET character_set_connection=utf8");
-        mysqli_query("SET character_set_client=utf8");
-        mysqli_query("SET character_set_results=utf8");
     }
 
     public function insert() {
