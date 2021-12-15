@@ -13,11 +13,14 @@ function windowLoaded() {
     var welcomeContainer = document.getElementById("welcome-container");
     welcomeContainer.style.minHeight = (welcomeContainer.getElementsByClassName("rule")[0].getBoundingClientRect().height + parseFloat(getComputedStyle(welcomeContainer).paddingTop.substring(0, getComputedStyle(welcomeContainer).paddingTop.length - 2)) + parseFloat(getComputedStyle(welcomeContainer).paddingBottom.substring(0, getComputedStyle(welcomeContainer).paddingBottom.length - 2))) + "px";
     
-    // Joga a página para o topo independente de onde estiver
-    window.scrollTo(0, 0);
+    // Chama a função de scroll uma vez
+    windowScrolled();
 
     // Chama a função de resize uma vez
     windowResized();
+
+    // Joga a página para o topo independente de onde estiver
+    window.scrollTo(0, 0);
 }
 
 function windowScrolled(e) {
