@@ -709,18 +709,23 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 20px 40px;
 }
 
-.navbar li a:hover::after {
+.navbar li a::after {
     content: "";
     position: absolute;
-    width: calc(100% - 80px);
+    width: 0;
     height: 5px;
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     border-radius: 99999px;
-    animation-name: navbar-link-hover;
-    animation-duration: 0.3s;
+}
+
+.navbar li a:hover::after {
+    width: calc(100% - 80px);
+    transition: all 0.3s linear;
+    /*animation-name: navbar-link-hover;
+    animation-duration: 0.3s;*/
 }
 
 .navbar a {
