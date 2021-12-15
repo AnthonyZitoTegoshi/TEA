@@ -831,11 +831,18 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 0.5rem;
 }
 
+.focus {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    transition: all 0.25s linear;
+}
+
 .focus:hover{
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-    transition: 0.25s linear;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.25s linear;
 }
 
 .no-resize {resize: none;}
