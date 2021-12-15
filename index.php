@@ -471,7 +471,7 @@
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
         session_start(); echo $_SESSION["queryStatus"];
-        if (isset($_SESSION["queryStatus"])) {
+        /*if (isset($_SESSION["queryStatus"])) {
             echo "<div id='queryStatusPopup' class='container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10'>
                 <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
                     <div class='text-left line-md poppins padding-20'>"
@@ -484,7 +484,7 @@
             </div>";
             echo "<script>alert('" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . "')</script>";
             //session_destroy();
-        }
+        }*/
     ?>
 
     <!------------------------------Whatsapp Button------------------------------>
