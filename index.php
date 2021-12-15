@@ -24,7 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body><?php session_start(); echo $_SESSION["queryStatus"]?>
+<body><?php session_start(); echo "queryStatus"?>
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
