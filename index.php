@@ -468,9 +468,11 @@
         </div>
     </section>
 
-    <div class="container fit-child screen-center bg-dark-gradient light padding-5 radius-20">
+    <div class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift">
         <div class="col padding-20 radius-10 bg-light">
-            Teste de mensagem
+            <div class="col padding-20">
+                Mensagem
+            </div>
         </div>
     </div>
 
