@@ -193,7 +193,7 @@ function frmValidate() {
     var userContact = document.getElementsByName("usercontact")[0];
     var userMessage = document.getElementsByName("usermessage")[0];
 
-    alert(userMessage.value);
+    userName.value = userName.value.trim();
 }
 
 // Seta quando chamar a função de resize
