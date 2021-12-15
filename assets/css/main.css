@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
 }
 
-.hover-light:hover {color: var(--light);}
+.hover-light:hover {color: var(--light); }
 .hover-dark:hover {color: var(--dark);}
 .hover-light-purple:hover {color: var(--lightPurple);}
 .hover-normal-purple:hover {color: var(--normalPurple);}
@@ -863,13 +863,15 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
-.hover-bg-light:hover {background-color: var(--light); transition: 20s linear;}
+
+
+.hover-bg-light:hover {background-color: var(--light); }
 .hover-bg-dark:hover {background-color: var(--dark);}
 .hover-bg-light-purple:hover {background-color: var(--lightPurple);}
 .hover-bg-normal-purple:hover {background-color: var(--normalPurple);}
 .hover-bg-dark-purple:hover {background-color: var(--darkPurple);}
-.hover-bg-dark-gradient:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple)) ;}
-.hover-bg-light-gradient:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));  }
+.hover-bg-dark-gradient:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple)); }
+.hover-bg-light-gradient:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
 
 .focus-bg-light:focus-within {background-color: var(--light);}
 .focus-bg-dark:focus-within {background-color: var(--dark);}
