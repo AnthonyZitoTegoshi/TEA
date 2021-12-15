@@ -468,7 +468,11 @@
         </div>
     </section>
 
-    <div class="container fit-child screen-center bg-dark light padding-20 radius-20">asd</div>
+    <div class="container fit-child screen-center bg-dark-gradient light padding-5 radius-20">
+        <div class="col padding-20 radius-10">
+            Teste de mensagem
+        </div>
+    </div>
 
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
