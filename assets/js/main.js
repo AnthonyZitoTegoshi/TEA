@@ -15,6 +15,9 @@ function windowLoaded() {
     
     // Joga a página para o topo independente de onde estiver
     window.scrollTo(0, 0);
+
+    // Chama a função de resize uma vez
+    windowResized();
 }
 
 function windowScrolled(e) {
@@ -199,4 +202,3 @@ window.addEventListener("click",dropdownToggle);
 
 // Chama a função uma vez quando estiver carregada a página
 window.addEventListener("load", windowLoaded);
-window.addEventListener("load", windowResized);
