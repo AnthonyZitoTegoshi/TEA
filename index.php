@@ -476,12 +476,12 @@
                 <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
                     <div class='text-left line-md poppins padding-20'>"
                         . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") .
-                    "</div>
-                    <div class='col fit-child padding-10'>
-                        <div class='text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer' onclick='document.getElementById('queryStatusPopup').remove()'>Entendido!</div>
+                    '</div>
+                    <div class="col fit-child padding-10">
+                        <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer" onclick="document.getElementById("' . "queryStatusPopup" . '").remove()">Entendido!</div>
                     </div>
                 </div>
-            </div>";
+            </div>';
             session_destroy();
         }
     ?>
