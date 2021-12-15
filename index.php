@@ -456,7 +456,7 @@
                                         </div>
                                     </div>
                                     <div class="col fit-child padding-10">
-                                        <input class="col poppins dark bg-light hover-bg-light-gradient hover-light padding-10 text-center border-0 radius" type="submit" value="Enviar mensagem">
+                                        <input class="col poppins dark bg-light hover-from-bg-light-to-bg-light-gradient hover-light padding-10 text-center border-0 radius" type="submit" value="Enviar mensagem">
                                     </div>
                                 </form>
                             </div>

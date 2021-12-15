@@ -849,35 +849,42 @@ h1, h2, h3, h4, h5, h6, p {
 
 [type="submit"] {cursor: pointer;}
 
-.hover-light:hover {color: var(--light); }
-.hover-dark:hover {color: var(--dark);}
-.hover-light-purple:hover {color: var(--lightPurple);}
-.hover-normal-purple:hover {color: var(--normalPurple);}
-.hover-dark-purple:hover {color: var(--darkPurple);}
+.hover-light:hover {color: var(--light); transition: all 0.1s linear;}
+.hover-dark:hover {color: var(--dark); transition: all 0.1s linear;}
+.hover-light-purple:hover {color: var(--lightPurple); transition: all 0.1s linear;}
+.hover-normal-purple:hover {color: var(--normalPurple); transition: all 0.1s linear;}
+.hover-dark-purple:hover {color: var(--darkPurple); transition: all 0.1s linear;}
 .hover-dark-gradient:hover {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    transition: all 0.1s linear;
 }
 .hover-light-gradient:hover {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    transition: all 0.1s linear;
     
 }
-.hover-bg-dark-gradient{
-    background-color: transparent;
-}
 
-.hover-bg-light:hover {background-color: var(--light); }
-.hover-bg-dark:hover {background-color: var(--dark);}
-.hover-bg-light-purple:hover {background-color: var(--lightPurple);}
-.hover-bg-normal-purple:hover {background-color: var(--normalPurple);}
-.hover-bg-dark-purple:hover {background-color: var(--darkPurple);}
-.hover-bg-dark-gradient:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple)) ;}
-.hover-bg-light-gradient:hover {background-color: var(--lightPurple); transition: all 0.5s linear;}
+[class*="from-bg-light"] {background-color: var(--light);transition: all 0.1s linear;}
+[class*="from-bg-dark"] {background-color: var(--dark);transition: all 0.1s linear;}
+[class*="from-bg-light-purple"] {background-color: var(--lightPurple);transition: all 0.1s linear;}
+[class*="from-bg-normal-purple"] {background-color: var(--normalPurple);transition: all 0.1s linear;}
+[class*="from-bg-dark-purple"] {background-color: var(--darkPurple);transition: all 0.1s linear;}
+[class*="from-bg-dark-gradient"] {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));transition: all 0.1s linear;}
+[class*="from-bg-light-gradient"] {background-color: var(--lightPurple); transition: all 0.1s linear;}
+
+[class*="to-bg-light"]:hover {background-color: var(--light);transition: all 0.1s linear;}
+[class*="to-bg-dark"]:hover {background-color: var(--dark);transition: all 0.1s linear;}
+[class*="to-bg-light-purple"]:hover {background-color: var(--lightPurple);transition: all 0.1s linear;}
+[class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);transition: all 0.1s linear;}
+[class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);transition: all 0.1s linear;}
+[class*="to-bg-dark-gradient"]:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));transition: all 0.1s linear;}
+[class*="to-bg-light-gradient"]:hover {background-color: var(--lightPurple); transition: all 0.1s linear;}
 
 .focus-bg-light:focus-within {background-color: var(--light);}
 .focus-bg-dark:focus-within {background-color: var(--dark);}
