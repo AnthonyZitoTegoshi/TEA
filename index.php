@@ -468,13 +468,13 @@
         </div>
     </section>
 
-    <div class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10">
+    <div id="queryStatusPopup" class="container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10">
         <div class="row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light">
             <div class="text-left line-md poppins padding-20">
                 Mensagem enviada com sucesso!
             </div>
             <div class="col fit-child padding-10">
-            <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius">Entendido!</div>
+                <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer" onclick="document.getElementById('queryStatusPopup').destroy()">Entendido!</div>
             </div>
         </div>
     </div>
