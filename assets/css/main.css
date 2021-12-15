@@ -876,7 +876,7 @@ h1, h2, h3, h4, h5, h6, p {
 [class*="from-bg-normal-purple"] {background-color: var(--normalPurple);transition: all 0.2s linear;}
 [class*="from-bg-dark-purple"] {background-color: var(--darkPurple);transition: all 0.2s linear;}
 [class*="from-bg-dark-gradient"] {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));transition: all 0.2s linear;}
-[class*="from-bg-light-gradient"] {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple)); transition: all 0.2s linear;}
+[class*="from-bg-light-gradient"] {background-color: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple)); transition: all 0.2s linear;}
 
 [class*="to-bg-light"]:hover {background-color: var(--light);transition: all 0.2s linear;}
 [class*="to-bg-dark"]:hover {background-color: var(--dark);transition: all 0.2s linear;}
@@ -884,7 +884,7 @@ h1, h2, h3, h4, h5, h6, p {
 [class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);transition: all 0.2s linear;}
 [class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);transition: all 0.2s linear;}
 [class*="to-bg-dark-gradient"]:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));transition: all 0.2s linear;}
-[class*="to-bg-light-gradient"]:hover {background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple)); transition: all 0.2s linear;}
+[class*="to-bg-light-gradient"]:hover {background-color: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple)); transition: all 0.2s linear;}
 
 .focus-bg-light:focus-within {background-color: var(--light);}
 .focus-bg-dark:focus-within {background-color: var(--dark);}
