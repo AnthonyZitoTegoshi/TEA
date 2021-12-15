@@ -850,19 +850,40 @@ h1, h2, h3, h4, h5, h6, p {
 
 [type="submit"] {cursor: pointer;}
 
-.hover-light:hover {color: var(--light); /*transition: all 0.1s linear;*/}
-.hover-dark:hover {color: var(--dark); /*transition: all 0.1s linear;*/}
-.hover-light-purple:hover {color: var(--lightPurple); /*transition: all 0.1s linear;*/}
-.hover-normal-purple:hover {color: var(--normalPurple); /*transition: all 0.1s linear;*/}
-.hover-dark-purple:hover {color: var(--darkPurple); /*transition: all 0.1s linear;*/}
-.hover-dark-gradient:hover {
+[class*="from-light"] {color: var(--light); /*transition: all 0.1s linear;*/}
+[class*="from-dark"] {color: var(--dark); /*transition: all 0.1s linear;*/}
+[class*="from-light-purple"] {color: var(--lightPurple); /*transition: all 0.1s linear;*/}
+[class*="from-normal-purple"] {color: var(--normalPurple); /*transition: all 0.1s linear;*/}
+[class*="from-dark-purple"] {color: var(--darkPurple); /*transition: all 0.1s linear;*/}
+[class*="from-dark-gradient"] {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     /*transition: all 0.1s linear;*/
 }
-.hover-light-gradient:hover {
+[class*="from-light-gradient"] {
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*transition: all 0.1s linear;*/
+    
+}
+
+[class*="to-light"]:hover {color: var(--light); /*transition: all 0.1s linear;*/}
+[class*="to-dark"]:hover {color: var(--dark); /*transition: all 0.1s linear;*/}
+[class*="to-light-purple"]:hover {color: var(--lightPurple); /*transition: all 0.1s linear;*/}
+[class*="to-normal-purple"]:hover {color: var(--normalPurple); /*transition: all 0.1s linear;*/}
+[class*="to-dark-purple"]:hover {color: var(--darkPurple); /*transition: all 0.1s linear;*/}
+[class*="to-dark-gradient"]:hover {
+    background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*transition: all 0.1s linear;*/
+}
+[class*="to-light-gradient"]:hover {
     background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));
     background-clip: text;
     -webkit-background-clip: text;
