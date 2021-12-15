@@ -1,5 +1,4 @@
 <?php
-ob_start();
 session_start();
 
 // Inclusão das classes necessárias
@@ -25,5 +24,5 @@ $response = $dbConnection->insert("sendus", "id", 0, "username", $userName, "use
 // Volta para a página all-in-one enviando o resultado da query pela session
 $_SESSION["queryStatus"] = $response;
 header("Location: ./index.php");
-
+die();
 ?>

@@ -470,7 +470,6 @@
 
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
-        ob_start();
         session_start();
         echo $_SESSION["queryStatus"];
         /*if (isset($_SESSION["queryStatus"])) {
