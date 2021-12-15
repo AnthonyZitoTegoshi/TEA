@@ -18,9 +18,6 @@ function windowLoaded() {
 
     // Chama a função de resize uma vez
     windowResized();
-
-    // Joga a página para o topo independente de onde estiver
-    document.getElementById("go-home").click();
 }
 
 function windowScrolled(e) {
@@ -146,6 +143,9 @@ function windowResized() {
             }
         }
     }
+
+    // Joga a página para o topo independente de onde estiver
+    document.getElementById("go-home").click();
 }
 
 // Função que verifica com qual dropdown o usuário interagiu
