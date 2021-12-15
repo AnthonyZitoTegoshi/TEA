@@ -471,7 +471,7 @@
     <!-------------VERIFICAÇÃO_DE_STATUS_DA_MENSAGEM_DO_FORM------------->
     <?php
         session_start();
-        echo "<script>" . $_SESSION["queryStatus"] . "</script>";
+        echo "<script>alert('" . $_SESSION["queryStatus"] . "')</script>";
         if (isset($_SESSION["queryStatus"])) {
             echo "<div id='queryStatusPopup' class='container fit-child screen-center bg-dark-gradient dark padding-5 radius-15 lift-10'>
                 <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
