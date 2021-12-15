@@ -905,8 +905,8 @@ h1, h2, h3, h4, h5, h6, p {
 [class*="to-bg-light-purple"]:hover {background-color: var(--lightPurple);}
 [class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);}
 [class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);}
-[class*="to-bg-light-gradient"]:hover {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
-[class*="to-bg-dark-gradient"]:hover {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
+[class*="to-bg-light-gradient"]:hover {background-color: blue; background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
+[class*="to-bg-dark-gradient"]:hover {background-color: blue; background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
 
 .focus-light:focus-within {color: var(--light); /*transition: all 0.1s linear;*/}
 .focus-dark:focus-within {color: var(--dark); /*transition: all 0.1s linear;*/}
