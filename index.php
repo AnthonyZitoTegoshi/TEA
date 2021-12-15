@@ -248,7 +248,7 @@
                             <div class="col">
                                 <div class="row-evenly flex-nowrap-md">
                                     <div class="col-9-sm col-3-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
@@ -273,7 +273,7 @@
                                         </div>
                                     </div>
                                     <div class="col-9-sm col-3-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
@@ -298,7 +298,7 @@
                                         </div>
                                     </div>
                                     <div class="col-9-sm col-3-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
@@ -362,7 +362,7 @@
                             <div class="col">
                                 <div class="row-evenly items-center flex-column">
                                     <div class="col-11-sm col-10-lg col-9-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
@@ -381,7 +381,7 @@
                                         </div>
                                     </div>
                                     <div class="col-11-sm col-10-lg col-9-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
@@ -400,7 +400,7 @@
                                         </div>
                                     </div>
                                     <div class="col-11-sm col-10-lg col-9-xx padding-10">
-                                        <div class="container padding-5 radius-10 bg-dark-gradient focus hover-lift">
+                                        <div class="container padding-5 radius-10 bg-dark-gradient">
                                             <div class="container padding-20 radius-5 bg-light">
                                                 <div class="row-start items-center flex-column flex-nowrap">
                                                     <div class="col-10-xs col-12-md">
