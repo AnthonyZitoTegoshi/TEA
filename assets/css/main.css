@@ -892,17 +892,21 @@ h1, h2, h3, h4, h5, h6, p {
     
 }
 
-[class*="from-bg-light"] {background-color: var(--light);transition: all 0.2s linear;}
-[class*="from-bg-dark"] {background-color: var(--dark);transition: all 0.2s linear;}
-[class*="from-bg-light-purple"] {background-color: var(--lightPurple);transition: all 0.2s linear;}
-[class*="from-bg-normal-purple"] {background-color: var(--normalPurple);transition: all 0.2s linear;}
-[class*="from-bg-dark-purple"] {background-color: var(--darkPurple);transition: all 0.2s linear;}
+[class*="from-bg-light"] {background-color: var(--light);}
+[class*="from-bg-dark"] {background-color: var(--dark);}
+[class*="from-bg-light-purple"] {background-color: var(--lightPurple);}
+[class*="from-bg-normal-purple"] {background-color: var(--normalPurple);}
+[class*="from-bg-dark-purple"] {background-color: var(--darkPurple);}
+[class*="from-bg-light-gradient"] {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
+[class*="from-bg-dark-gradient"] {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
 
-[class*="to-bg-light"]:hover {background-color: var(--light);transition: all 0.2s linear;}
-[class*="to-bg-dark"]:hover {background-color: var(--dark);transition: all 0.2s linear;}
-[class*="to-bg-light-purple"]:hover {background-color: var(--lightPurple);transition: all 0.2s linear;}
-[class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);transition: all 0.2s linear;}
-[class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);transition: all 0.2s linear;}
+[class*="to-bg-light"]:hover {background-color: var(--light);}
+[class*="to-bg-dark"]:hover {background-color: var(--dark);}
+[class*="to-bg-light-purple"]:hover {background-color: var(--lightPurple);}
+[class*="to-bg-normal-purple"]:hover {background-color: var(--normalPurple);}
+[class*="to-bg-dark-purple"]:hover {background-color: var(--darkPurple);}
+[class*="to-bg-light-gradient"] {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--normalPurple));}
+[class*="to-bg-dark-gradient"] {background-color: transparent; background-image: linear-gradient(-45deg, var(--lightPurple), var(--darkPurple));}
 
 .focus-light:focus-within {color: var(--light); /*transition: all 0.1s linear;*/}
 .focus-dark:focus-within {color: var(--dark); /*transition: all 0.1s linear;*/}
