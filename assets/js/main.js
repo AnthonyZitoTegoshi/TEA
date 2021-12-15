@@ -143,9 +143,6 @@ function windowResized() {
             }
         }
     }
-
-    // Joga a página para o topo independente de onde estiver
-    document.getElementById("go-home").click();
 }
 
 // Função que verifica com qual dropdown o usuário interagiu
