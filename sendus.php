@@ -18,7 +18,6 @@ $userMessage = isset($_POST["usermessage"]) ? $_POST["usermessage"] : null;
 
 // Cria uma nova conexão para futuro uso
 $dbConnection = new DBConnection($host, $user, $password, $database);
-mysql_set_charset("utf8", $dbConnection->getConnection());
 
 // Insere os dados enviados pelo form na tabela de sendus
 $response = $dbConnection->insert("sendus", "id", 0, "username", $userName, "usercontact", $userContact, "usermessage", $userMessage);
