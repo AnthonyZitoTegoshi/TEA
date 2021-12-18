@@ -12,6 +12,9 @@ Nós criamos uma empresa chamada TEA Web Systems e criamos uma parte de contato 
 Temos o vídeo completo, que inclui a apresentação da empresa e da funcionalidade da parte de contato e feedback, o vídeo com apenas a explicação do código e ainda o código no github e o link para o site na hospedagem.
 
 Link do vídeo completo: https://youtu.be/wbnbUnFGUgM
+
 Link da explicação: https://youtu.be/wbnbUnFGUgM?t=261
+
 Link do site hospedado: https://projetos.talentosdoifsp.gru.br/tea
+
 Link do projeto no github: https://github.com/AnthonyZitoTegoshi/TEA.git
