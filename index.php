@@ -24,7 +24,7 @@
     <!------------------------------JQUERY------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body><?php session_start(); echo "queryStatus"?>
+<body>
     <!------------------------------HEADER------------------------------>
     <div id="pre-welcome"></div>
     <header id="header-sticky" class="container padding-10 poppins dark bg-light">
@@ -476,13 +476,12 @@
                 <div class='row-center items-center flex-nowrap flex-column padding-10 radius-10 bg-light'>
                     <div class='text-left line-md poppins padding-20'>"
                         . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") .
-                    "</div>
-                    <div class='col fit-child padding-10'>
-                        <div class='text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer' onclick='document.getElementById('queryStatusPopup').remove()'>Entendido!</div>
+                    '</div>
+                    <div class="col fit-child padding-10">
+                        <div class="text-left line-md nunito font-weight-bolder bg-dark-gradient light padding-10 radius cursor-pointer" onclick="document.getElementById(' . "'" . "queryStatusPopup" . "'" . ').remove()">Entendido!</div>
                     </div>
                 </div>
-            </div>";
-            echo "<script>alert('" . ($_SESSION["queryStatus"] ? "Mensagem enviada com sucesso!" : "A mensagem não pôde ser enviada... Por favor tente novamente mais tarde") . "')</script>";
+            </div>';
             session_destroy();
         }
     ?>
